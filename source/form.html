@@ -33,33 +33,33 @@
   </header>
   <main class="main-form">
     <section class="finding-progamm">
-      <div class="anketa">
-        <h1 class="finding-progamm-title">Подбор программы</h1>
-        <span class="finding-progamm-text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-        <form class="anketa-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="anketa-form" for="name-form">Имя:*</label>
-          <div class="form-name">
-            <input class="field-form" value="Барсик" type="text" name="name-form" id="name-form" required="">
+      <div class="finding-progamm__anketa container">
+        <h1 class="finding-progamm__title">Подбор программы</h1>
+        <span class="finding-progamm__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
+        <form class="finding-progamm__anketa-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="finding-progamm__anketa-form" for="name-form">Имя:*</label>
+          <div class="finding-progamm__form-name">
+            <input class="finding-progamm__field-form" value="Барсик" type="text" name="name-form" id="name-form" required="">
           </div>
         </form>
-        <form class="anketa-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="anketa-form" for="weight-form">Вес (кг):*</label>
-          <div class="form-weight">
-            <input class="field-form" value="7" type="text" name="weight-form" id="weight-form" required="">
+        <form class="finding-progamm__anketa-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="finding-progamm__anketa-form" for="weight-form">Вес (кг):*</label>
+          <div class="finding-progamm__form-weight">
+            <input class="finding-progamm__field-form" value="7" type="text" name="weight" id="weight-form" required="">
           </div>
         </form>
-        <form class="anketa-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="anketa-form" for="age-form">Возраст (лет):</label>
-          <div class="form-age">
-            <input class="field-form" value="7" type="text" name="weight-form" id="weight-form" required="">
+        <form class="finding-progamm__anketa-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="finding-progamm__anketa-form" for="age-form">Возраст (лет):</label>
+          <div class="finding-progamm__form-age">
+            <input class="finding-progamm__field-form" value="7" type="text" name="age" id="age-form" required="">
           </div>
         </form>
       </div>
-      <div class="targets">
-        <fieldset class="filter-target">
+      <div class="finding-progamm__targets container">
+        <fieldset class="finding-progamm__filter-target">
           <legend class="visually-hidden">Выбор цели</legend>
-          <ul class="target-filter-list">
-            <li class="target-filter-item">
+          <ul class="finding-progamm__target-filter-list">
+            <li class="finding-progamm__target-filter-item">
               <label for="slim-check" class="control">
                 <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
                   checked="">
@@ -67,14 +67,14 @@
                 <span class="control-label">Похудение</span>
               </label>
             </li>
-            <li class="target-filter-item">
+            <li class="finding-progamm__target-filter-item">
               <label for="pro-check" class="control">
                 <input class="visually-hidden control-input" type="radio" name="pro" id="pro-check" value="pro">
                 <span class="control-mark"></span>
                 <span class="control-label">Набор массы</span>
               </label>
             </li>
-            <li class="target-filter-item">
+            <li class="finding-progamm__target-filter-item">
               <label for="need-advise-check" class="control">
                 <input class="visually-hidden control-input" type="radio" name="need-advise" id="need-advise-check"
                   value="pro">
@@ -85,11 +85,11 @@
           </ul>
         </fieldset>
       </div>
-      <div class="contacts">
-        <h2 class="contacts-title">Контактные данные (владельца кота)</h2>
-        <form class="contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="finding-progamm__contacts container">
+        <h2 class="finding-progamm__ontacts-title">Контактные данные (владельца кота)</h2>
+        <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="contacts-form" for="email-form">e-mail:*</label>
-          <div class="form-contacts">
+          <div class="finding-progamm__form-contacts">
             <input class="field-form" value="kuklachev@gmail.com" type="text" name="email-form" id="email-form"
               required="">
             <button class="icon-email">
@@ -100,9 +100,9 @@
             </button>
           </div>
         </form>
-        <form class="contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="contacts-form" for="phone-form">Телефон:*</label>
-          <div class="form-contacts">
+          <div class="finding-progamm__form-contacts">
             <input class="field-form" value="kuklachev@gmail.com" type="text" name="phone-form" id="phone-form"
               required="">
             <button class="icon-phone">
@@ -121,8 +121,8 @@
           </div>
         </form>
       </div>
-      <div class="comments">
-        <h2 class="comments-title">Комментарий></h2>
+      <div class="finding-progamm__comments container">
+        <h2 class="finding-progamm__comments-title">Комментарий></h2>
         <form class="comments-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="comments-form" for="comments-form"></label>
           <div class="form-comments">
@@ -131,32 +131,32 @@
           </div>
         </form>
       </div>
-      <div class="add">
-        <h2 class="add-title">Дополнительно</h2>
+      <div class="finding-progamm__add container">
+        <h2 class="finding-progamm__add-title">Дополнительно</h2>
         <fieldset class="ingredients">
-          <ul class="ingredients-list">
-            <li class="ingredients-item">
+          <ul class="finding-progamm__ingredients-list">
+            <li class="finding-progamm__ingredients-item">
               <label for="sweetener-check" class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="sweetener" id="sweetener-check">
                 <span class="control-mark"></span>
                 <span class="control-label">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="ingredients-item">
+            <li class="finding-progamm__ingredients-item">
               <label for="drinking-water-check" class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="drinking-water" id="drinking-water-check">
                 <span class="control-mark"></span>
                 <span class="control-label">Питьевая вода</span>
               </label>
             </li>
-            <li class="ingredients-item">
+            <li class="finding-progamm__ingredients-item">
               <label for="milk-check" class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="milk" id="milk-check">
                 <span class="control-mark"></span>
                 <span class="control-label">Молоко</span>
               </label>
             </li>
-            <li class="ingredients-item">
+            <li class="finding-progamm__ingredients-item">
               <label for="vitamins-check" class="control">
                 <input class="visually-hidden control-input" type="checkbox" name="vitamins" id="vitamins-check">
                 <span class="control-mark"></span>
@@ -166,16 +166,18 @@
           </ul>
         </fieldset>
       </div>
-      <button class="button button-send-request" type="submit">Применить</button>
+      <a class="finding-progamm__button button button--primary" href="form.html">Применить</a>
     </section>
     <section class="cooperation">
-      <div class="cooperation-wrapper">
-        <span class="cooperation-invitation">Приглашаем к сотрудничеству дилеров!</span>
-        <span class="cooperation-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <h2 class="visually-hidden">Сотрудничество</h2>
+      <div class="cooperation__container container">
+        <span class="cooperation__container-invitation">Приглашаем к сотрудничеству дилеров!</span>
+        <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
       </div>
     </section>
     <section class="map">
-      <div class="map-wrapper">
+      <h2 class="visually-hidden">Местоположение</h2>
+      <div class="map__container container">
         <img class="map-img" src="../images/map.jpg" alt="Карта" width="320" height="362">
         <img class="map-logo-img" alt="Логотип Карта" src="../images/logo-map-mobile.svg" width="57">
       </div>
@@ -228,6 +230,7 @@
     </div>
   </footer>
 </body>
+
 
 
 </html>
