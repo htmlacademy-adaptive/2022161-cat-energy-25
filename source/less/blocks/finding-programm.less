@@ -1,0 +1,247 @@
+.main-form {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.finding-progamm {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  justify-content: center;
+  padding: 0;
+}
+
+.finding-progamm-block {
+  padding: 0;
+  width: 320px;
+}
+
+.finding-progamm__anketa {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d9d9d9;
+}
+
+.finding-progamm__targets {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 22px;
+  padding-bottom: 3px;
+}
+
+.finding-progamm__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.finding-progamm__text {
+  margin: 0;
+  margin-bottom: 39px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.finding-progamm__contacts--block {
+  display: flex;
+}
+
+.finding-progamm__anketa-form {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  height: 45px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.anketa-name {
+  width: 18%;
+}
+
+.anketa-weight {
+  width: 31%;
+}
+
+.anketa-age {
+  width: 55%;
+}
+
+.finding-progamm__form-name {
+  width: 100%;
+}
+
+.finding-progamm__name-form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  height: 44px;
+  margin-bottom: 13px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.finding-progamm__form-weight {
+  width: 100%;
+}
+
+.finding-progamm__weight-form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  height: 44px;
+  margin-bottom: 13px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.finding-progamm__form-age {
+  width: 100%;
+}
+
+.finding-progamm__age-form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  height: 44px;
+  margin-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+
+.finding-progamm__filter-target {
+  margin: 0;
+  padding: 0;
+  margin-right: 112px;
+  border: none;
+  width: 100%;
+}
+
+.finding-progamm__target-filter-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.finding-progamm__target-filter-item {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #000000;
+  list-style-type: none;
+  height: 32px;
+}
+
+.control-input:hover + label::before {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+}
+
+.control {
+  display: flex;
+  position: relative;
+  padding-left: 45px;
+  height: 32px;
+  align-items: center;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+}
+
+.control-label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.control:hover .control-mark {
+  background: #e6e6e6;
+}
+
+.control-input:focus + .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 2px;
+  height: 7px;
+  background-color: #3f5e72;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 4px;
+  left: 11px;
+  width: 2px;
+  height: 12px;
+  background-color: #3f5e72;
+  content: "";
+}
+
+.control-input [type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(-45deg);
+}
+
+.control-input [type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(45deg);
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
