@@ -3,7 +3,15 @@
   flex-direction: column;
   text-align: center;
   padding-bottom: 20px;
+
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
+
+
 
 
 .functional-food__slogan {
@@ -11,6 +19,10 @@
   color: #ffffff;
   height: 302px;
   background-image: url("../images/background-cat.jpg");
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .transparent-cat {
@@ -19,8 +31,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #68b738;
+  background-color: @maingreen;
   opacity: 0.85;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .functional-food__img {
@@ -28,13 +44,52 @@
   top: 55%;
   left: 6.25%;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    z-index: -1;
+    top: 265px;
+    width: 631px;
+    height: 609px;
+    left: 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
+    top: 25px;
+    width: 530px;
+    height: 499px;
+    left: 587px;
+  }
+
 }
 
 .functional-food__button {
   width: 280px;
   height: 40px;
   margin: 0 auto;
-  margin-top: 138px;
+  margin-top: 458px;
+
+  @media (min-width: @tablet-width) {
+    top: 223px;
+    margin: 0;
+    margin-top: 290px;
+    margin-left: 87px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 340px;
+    margin-left: 67px;
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+
+  }
 }
 
 .functional-food__title {
@@ -46,9 +101,25 @@
   line-height: 36px;
   top: 0%;
   left: 0%;
-
-
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 117px;
+    padding-right: 117px;
+    text-align: left;
+    margin-top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 180px;
+    padding-right: 180px;
+    width: 420px;
+    margin-top: 117px;
+
+  }
 }
 
 .functional-food__text {
@@ -62,4 +133,24 @@
   top: 41%;
   left: 18.75%;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 117px;
+    padding-right: 117px;
+    text-align: left;
+    left: 0;
+    margin-top: 103px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 180px;
+    padding-right: 180px;
+    text-align: left;
+    left: 0;
+    margin-top: 146px;
+
+  }
 }

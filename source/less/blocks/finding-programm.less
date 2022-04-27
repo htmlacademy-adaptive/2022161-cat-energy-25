@@ -2,6 +2,14 @@
   width: 320px;
   box-sizing: border-box;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .finding-progamm {
@@ -10,17 +18,53 @@
   width: 320px;
   justify-content: center;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .finding-progamm-block {
   padding: 0;
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .finding-progamm__anketa {
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
+}
+
+.finding-progamm__anketa-block {
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 569px;
+  }
 }
 
 .finding-progamm__targets {
@@ -29,6 +73,24 @@
   border-top: 1px solid #d9d9d9;
   padding-top: 22px;
   padding-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding: 0;
+    margin: 0;
+    margin-top: 52px;
+    margin-left: 60px;
+    width: 630px;
+    height: 200px;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+    width: 568px;
+    height: 200px;
+    margin-top: 0;
+  }
 }
 
 .finding-progamm__title {
@@ -36,6 +98,19 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-left: 40px;
+    margin: 0;
+    margin-top: 64px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .finding-progamm__text {
@@ -46,34 +121,75 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+    width: 329px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .finding-progamm__contacts--block {
   display: flex;
+
 }
 
 .finding-progamm__anketa-form {
   display: flex;
   align-items: center;
-  margin-right: 13px;
   height: 45px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .anketa-name {
-  width: 18%;
+  width: 39px;
+
+  @media (min-width: @tablet-width) {
+    width: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 52px;
+  }
 }
 
 .anketa-weight {
-  width: 31%;
+  width: 76px;
+
+  @media (min-width: @tablet-width) {
+    width: 95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 95px;
+  }
 }
 
 .anketa-age {
-  width: 55%;
+  width: 109px;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 150px;
+  }
 }
 
 .finding-progamm__form-name {
@@ -94,6 +210,34 @@
   text-transform: uppercase;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 567px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 54px;
+  }
+}
+
+
+.finding-progamm__name-form:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.finding-progamm__name-form:focus {
+  border: 2px solid #444444;
+}
+
+
+input[type="text"]:invalid {
+  outline: 2px solid #ff8282;
 }
 
 .finding-progamm__form-weight {
@@ -114,6 +258,30 @@
   text-transform: uppercase;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 536px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    height: 54px;
+    margin-bottom: 20px;
+  }
+}
+
+
+.finding-progamm__weight-form:hover {
+  border: 1px solid #cdcdcd;
+}
+
+
+.finding-progamm__weight-form:focus {
+  border: 2px solid #444444;
 }
 
 .finding-progamm__form-age {
@@ -134,6 +302,27 @@
   text-transform: uppercase;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 497px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 100%;
+    height: 54px;
+  }
+}
+
+.finding-progamm__age-form:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.finding-progamm__age-form:focus {
+  border: 2px solid #444444;
 }
 
 .finding-progamm__filter-target {
@@ -142,6 +331,10 @@
   margin-right: 112px;
   border: none;
   width: 100%;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .finding-progamm__target-filter-list {
@@ -160,7 +353,20 @@
   color: #000000;
   list-style-type: none;
   height: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
 }
+
+
+.finding-progamm__target-filter-item:focus {
+  opacity: 0.3;
+}
+
+
 
 .control-input:hover + label::before {
   background: rgba(255, 255, 255, 0.6);
@@ -191,15 +397,19 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .control:hover .control-mark {
-  background: #e6e6e6;
+  border: 1px solid #bababa;
 }
 
 .control-input:focus + .control-mark {
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -236,12 +446,29 @@
   left: 8px;
   width: 14px;
   height: 14px;
-  background-color: #68b738;
+  background-color: @maingreen;
   border-radius: 50%;
   content: "";
 }
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
+}
+
+.finding-progamm__ingredients-item:focus {
+  opacity: 0.3;
+}
+
+.finding-progamm__desk-v {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.finding-progamm__desk {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+
 }
 

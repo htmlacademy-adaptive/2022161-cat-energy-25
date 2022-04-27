@@ -1,5 +1,6 @@
 .finding-progamm__add {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   position: relative;
 }
@@ -13,6 +14,16 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .add-title-line {
@@ -20,7 +31,13 @@
   width: calc(100% - 184px);
   top: 16px;
   left: 184px;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid @maingreen;
+
+  @media (min-width: @tablet-width) {
+    width: calc(100% - 350px);
+    top: 16px;
+    left: 320px;
+  }
 }
 
 .control-input[type="radio"] + .control-mark-squ {
@@ -34,7 +51,7 @@
   left: 5px;
   width: 2px;
   height: 7px;
-  background-color: #68b738;
+  background-color: @maingreen;
   content: "";
 }
 
@@ -44,7 +61,7 @@
   left: 11px;
   width: 2px;
   height: 12px;
-  background-color: #68b738;
+  background-color: @maingreen;
   content: "";
 }
 
@@ -62,6 +79,15 @@
   margin-right: 112px;
   border: none;
   max-width: 200px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .finding-progamm__ingredients-list {
@@ -69,6 +95,13 @@
   padding: 0;
   padding-bottom: 18px;
   min-width: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 104px;
+  }
 }
 
 .finding-progamm__ingredients-item {
@@ -80,6 +113,17 @@
   font-weight: 400;
   color: #000000;
   list-style-type: none;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 344px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 221px;
+  }
+
+
 }
 
 .note {
@@ -91,5 +135,46 @@
   text-align: center;
   padding-top: 21px;
   padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    width: 300px;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+  }
 }
+
+.finding-progamm__button {
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 0px;
+    width: 282px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 32px;
+    margin-bottom: 82px;
+  }
+}
+
+.finding-progamm-note {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 

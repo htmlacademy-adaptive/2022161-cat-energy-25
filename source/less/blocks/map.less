@@ -1,5 +1,61 @@
 .map__container {
   width: 320px;
+  height: 362px;
   padding: 0;
   margin: 0 auto;
+  background-position: 0 0;
+  background-repeat: repeat;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.map__container iframe {
+  width: 320px;
+  height: 362px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.map-logo-img {
+  position: absolute;
+  top: 115px;
+  left: 150px;
+
+  @media (min-width: @tablet-width) {
+    top: 130px;
+    left: 380px;
+  }
+
+}
+
+.map_cooperation {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    display: flex;
+    width: 585px;
+    height: 198px;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
+  }
+
+
 }

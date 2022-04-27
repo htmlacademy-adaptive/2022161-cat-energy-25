@@ -8,6 +8,12 @@
   justify-content: center;
   flex-direction: column;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
 }
 
 .page-footer__social {
@@ -27,12 +33,31 @@
   border-bottom: 1px solid #e6e6e6;
 }
 
+
+.footer-social__icon:hover path {
+  fill: @maingreen;
+}
+
+.footer-social__icon:focus path {
+  fill: @maingreen;
+  opacity: 0.3;
+}
+
 .footer-logo {
   display: flex;
   height: 95px;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
+}
+
+
+.footer-logo:hover {
+  opacity: 0.8;
+}
+
+.footer-logo:focus {
+  opacity: 0.6;
 }
 
 .footer-htmlacademy {
@@ -47,6 +72,12 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+    text-align: end;
+    align-items: center;
+  }
 }
 
 .footer-htmlacademy__text {
@@ -58,5 +89,27 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    margin-right: 22px;
+    align-items: center;
+  }
 }
 
+.footer-htmlacademy__logo:hover path {
+  fill: @maingreen;
+}
+
+.footer-htmlacademy__logo:focus path {
+  fill: @maingreen;
+  opacity: 0.3;
+}
+
+.footer-htmlacademy__text-logo {
+  color: #000000;
+}
+
+.footer-htmlacademy__text-logo:focus {
+  opacity: 0.3;
+}
