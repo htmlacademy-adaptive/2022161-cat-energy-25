@@ -4,10 +4,21 @@
   border-top: 1px solid #d9d9d9;
   padding-top: 35px;
   padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-top: 67px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
-.promo-wrapper {
+.promo__wrapper {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -16,26 +27,68 @@
   width: 280px;
   height: 290px;
   background-image: url("../images/cat-bag.png");
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../images/cat-bag-tab.png");
+    width: 707px;
+    height: 200px;
+    border: none;
+    flex-wrap: wrap;
+  }
 }
 
-.transparent-bag {
+.promo__transparent-bag {
   width: 280px;
   height: 290px;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #68b738;
+  background-color: @maingreen;
   opacity: 0.85;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: -1;
+  }
 }
 
-.promo-icon {
+.promo__transparent-bag-desk {
+  @media (min-width: @desktop-width) {
+    z-index: -1;
+    width: 245px;
+    height: 289px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @maingreen;
+    opacity: 0.85;
+  }
+}
+
+.promo__icon {
   display: flex;
   justify-content: center;
   z-index: 1;
   padding-top: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 77px;
+    padding-bottom: 15px;
+    width: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 3;
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
 }
 
-.promo-text {
+.promo__text {
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -47,4 +100,18 @@
   width: 100%;
   text-align: center;
   padding-top: 48px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 120px;
+    padding-bottom: 48px;
+    text-align: left;
+    width: 161px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    padding-left: 41px;
+    text-align: center;
+    padding-top: 46px;
+  }
 }

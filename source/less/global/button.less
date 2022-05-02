@@ -1,0 +1,46 @@
+.button {
+  display: flex;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: @maingreen;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-product-catalog-more {
+  background-color: #f2f2f2;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 64px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
+
+.button-product-catalog-more:hover {
+  background-color: #ebebeb;
+}
+
+.button-product-catalog-more:focus {
+  color: rgba(68, 68, 68, 0.3);
+}

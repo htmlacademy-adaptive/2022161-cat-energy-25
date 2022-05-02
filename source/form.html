@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт Энерджи</title>
   <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
@@ -14,6 +15,8 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
           height="38">
+        <img class="main-header__logo-tablet" alt="Логотип Кэт Энерджи" src="images/logo-tablet.svg" width="174"
+          height="52">
       </a>
       <a class="main-header__catenergy-logo">
         <svg class="catenergy-logo" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
@@ -38,187 +41,208 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a class="navigation__link-desk navigation__link--current">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link-desk" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
+          <a class="navigation__link-desk" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-form container">
+  <main class="main-form">
     <section class="finding-progamm">
       <div class="finding-progamm-block">
-        <div class="finding-progamm__anketa container">
-          <h1 class="finding-progamm__title">Подбор программы</h1>
-          <span class="finding-progamm__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-          <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="finding-progamm__anketa-form anketa-name" for="name-form">Имя:*</label>
-            <div class="finding-progamm__form-name">
-              <input class="finding-progamm__name-form" value="Барсик" type="text" name="name-form" id="name-form"
-                required="">
+        <div class="finding-progamm__anketa">
+          <h1 class="finding-progamm__title container">Подбор программы</h1>
+          <span class="finding-progamm__text container">Заполните анкету, и мы подберем<br>программу питания для вашего
+            кота</span>
+          <div class="finding-progamm__desk-v">
+            <div class="finding-progamm__desk-anketa container">
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-name" for="name-form">Имя:*</label>
+                <div class="finding-progamm__form-name">
+                  <input class="finding-progamm__name-form" value="Барсик" type="text" name="name-form" id="name-form"
+                    required="">
+                </div>
+              </form>
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-weight" for="weight-form">Вес (кг):*</label>
+                <div class="finding-progamm__form-weight">
+                  <input class="finding-progamm__weight-form" value="7" type="text" name="weight" id="weight-form"
+                    required="">
+                </div>
+              </form>
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-age" for="age-form">Возраст (лет):</label>
+                <div class="finding-progamm__form-age">
+                  <input class="finding-progamm__age-form" value="7" type="text" name="age" id="age-form" required="">
+                </div>
+              </form>
             </div>
-          </form>
-          <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="finding-progamm__anketa-form anketa-weight" for="weight-form">Вес (кг):*</label>
-            <div class="finding-progamm__form-weight">
-              <input class="finding-progamm__weight-form" value="7" type="text" name="weight" id="weight-form"
-                required="">
+            <div class="finding-progamm__targets">
+              <fieldset class="finding-progamm__filter-target container">
+                <legend class="visually-hidden">Выбор цели</legend>
+                <ul class="finding-progamm__target-filter-list container">
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="slim-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
+                        checked="">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="pro-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="pro" id="pro-check" value="pro">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="need-advise-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="need-advise"
+                        id="need-advise-check" value="pro">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-          </form>
-          <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="finding-progamm__anketa-form anketa-age" for="age-form">Возраст (лет):</label>
-            <div class="finding-progamm__form-age">
-              <input class="finding-progamm__age-form" value="7" type="text" name="age" id="age-form" required="">
+          </div>
+          <div class="finding-progamm__contacts">
+            <div class="lines-contacts"></div>
+            <div class="finding-progamm__contacts-block container">
+              <h2 class="finding-progamm__contacts-title">Контактные данные (владельца кота)</h2>
+            </div>
+            <div class="finding-progamm__desk container">
+              <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="contacts-form contacts-email" for="email-form">e-mail:*</label>
+                <div class="finding-progamm__form-contacts-email">
+                  <input class="finding-progamm__email" placeholder="KUKLACHEV@GMAIL.COM" type="email" name="email-form"
+                    id="email-form" required="">
+                  <button class="icon-email">
+                    <svg class="email-icon" aria-hidden="true" focusable="false" width="19" height="14"
+                      viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke="#222" stroke-width="1.3"
+                        d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="contacts-form contacts-phone" for="phone-form">Телефон:*</label>
+                <div class="finding-progamm__form-contacts-phone">
+                  <input class="finding-progamm__phone" placeholder="8 (960) 900-60-90" type="tel" name="phone-form"
+                    id="phone-form" required="">
+                  <button class="icon-phone"><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#p)" fill="#000">
+                        <path
+                          d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="p">
+                          <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="finding-progamm__comments">
+          <div class="lines-comments"></div>
+          <div class="finding-progamm__comments-title-line">
+            <h2 class="finding-progamm__comments-title">Комментарий</h2>
+          </div>
+          <form class="comments-form container" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-comments">
+              <textarea class="comments-field" rows="5" placeholder="Расскажите обо всех повадках кота"
+                name="comments-form" required=""></textarea>
             </div>
           </form>
         </div>
-        <div class="finding-progamm__targets container">
-          <fieldset class="finding-progamm__filter-target">
-            <legend class="visually-hidden">Выбор цели</legend>
-            <ul class="finding-progamm__target-filter-list">
-              <li class="finding-progamm__target-filter-item">
-                <label for="slim-check" class="control">
-                  <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
-                    checked="">
+        <div class="finding-progamm__add">
+          <div class="lines-add"></div>
+          <div class="finding-progamm__add-title-line container">
+            <h2 class="finding-progamm__add-title">Дополнительно</h2>
+          </div>
+          <fieldset class="ingredients">
+            <ul class="finding-progamm__ingredients-list">
+              <li class="finding-progamm__ingredients-item">
+                <label for="sweetener-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="sweetener" id="sweetener-check">
                   <span class="control-mark"></span>
-                  <span class="control-label">Похудение</span>
+                  <span class="control-label">Сахарозаменитель</span>
                 </label>
               </li>
-              <li class="finding-progamm__target-filter-item">
-                <label for="pro-check" class="control">
-                  <input class="visually-hidden control-input" type="radio" name="pro" id="pro-check" value="pro">
+              <li class="finding-progamm__ingredients-item">
+                <label for="drinking-water-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="drinking-water"
+                    id="drinking-water-check">
                   <span class="control-mark"></span>
-                  <span class="control-label">Набор массы</span>
+                  <span class="control-label">Питьевая вода</span>
                 </label>
               </li>
-              <li class="finding-progamm__target-filter-item">
-                <label for="need-advise-check" class="control">
-                  <input class="visually-hidden control-input" type="radio" name="need-advise" id="need-advise-check"
-                    value="pro">
+              <li class="finding-progamm__ingredients-item">
+                <label for="milk-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="milk" id="milk-check">
                   <span class="control-mark"></span>
-                  <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                  <span class="control-label">Молоко</span>
+                </label>
+              </li>
+              <li class="finding-progamm__ingredients-item">
+                <label for="vitamins-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="vitamins" id="vitamins-check">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Витамины</span>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
-        <div class="finding-progamm__contacts container">
-          <div class="finding-progamm__contacts-block">
-            <h2 class="finding-progamm__contacts-title">Контактные данные (владельца кота)</h2>
-            <div class="contacts-title-line"></div>
-          </div>
-          <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="contacts-form contacts-email" for="email-form">e-mail:*</label>
-            <div class="finding-progamm__form-contacts-email">
-              <input class="finding-progamm__email" value="KUKLACHEV@GMAIL.COM" type="text" name="email-form"
-                id="email-form" required="">
-
-              <button class="icon-email">
-                <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="#222" stroke-width="1.3"
-                    d="M.65 5.848v8M17.65 5.848v8M0 13.198h18M0 1.198h18M17.35 3.03 9 9.524.65 3.03V1.498h16.7V3.03Z" />
-                </svg>
-              </button>
-            </div>
-          </form>
-          <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="contacts-form contacts-phone" for="phone-form">Телефон:*</label>
-            <div class="finding-progamm__form-contacts-phone">
-              <input class="finding-progamm__phone" value="8 (960) 900-60-90" type="text" name="phone-form"
-                id="phone-form" required="">
-              <button class="icon-phone"><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#p)" fill="#000">
-                    <path
-                      d="M17.9 9.753H9.4v1.204h8.5l-2.1 2.107.9.903 3.1-3.11a.754.754 0 0 0 0-.904l-3.1-3.11-.9.903 2.1 2.007ZM8.1 19.787v-6.221a.653.653 0 0 0-.6-.602H3.1a1.226 1.226 0 0 0 1.2 1.204h2.5v5.017H3.1a1.784 1.784 0 0 1-1.728-1.02 1.801 1.801 0 0 1-.172-.686V3.431a1.78 1.78 0 0 1 .483-1.25A1.767 1.767 0 0 1 2.9 1.624h3.9v5.017H4.4a1.218 1.218 0 0 0-1.2 1.204h4.4a.649.649 0 0 0 .6-.602V.923A.863.863 0 0 0 7.5.32H3.1a2.99 2.99 0 0 0-2.151.81A3.01 3.01 0 0 0 0 3.23v13.948a2.91 2.91 0 0 0 .772 2.192 2.89 2.89 0 0 0 2.128.919h4.6a.499.499 0 0 0 .6-.502Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="p">
-                      <path fill="#fff" transform="translate(0 .32)" d="M0 0h20v20.069H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-            </div>
-          </form>
+        <div class="finding-progamm-note container">
+          <a class="finding-progamm__button button button--primary" href="form.html">Отправить заявку</a>
+          <span class="note">* — Обязательные поля</span>
         </div>
-      </div>
-      <div class="finding-progamm__comments container">
-        <div class="finding-progamm__comments-title-line">
-          <h2 class="finding-progamm__comments-title">Комментарий</h2>
-          <div class="comments-title-line"></div>
-        </div>
-
-        <form class="comments-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="comments-form" for="comments-form"></label>
-          <div class="form-comments">
-            <input class="comments-field" value="Расскажите обо всех повадках кота" type="text" name="comments-form"
-              id="comments-form" required="">
-          </div>
-
-        </form>
-      </div>
-      <div class="finding-progamm__add container">
-        <div class="finding-progamm__add-title-line">
-          <h2 class="finding-progamm__add-title">Дополнительно</h2>
-          <div class="add-title-line"></div>
-        </div>
-        <fieldset class="ingredients">
-          <ul class="finding-progamm__ingredients-list">
-            <li class="finding-progamm__ingredients-item">
-              <label for="sweetener-check" class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="sweetener" id="sweetener-check">
-                <span class="control-mark"></span>
-                <span class="control-label">Сахарозаменитель</span>
-              </label>
-            </li>
-            <li class="finding-progamm__ingredients-item">
-              <label for="drinking-water-check" class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="drinking-water"
-                  id="drinking-water-check">
-                <span class="control-mark"></span>
-                <span class="control-label">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="finding-progamm__ingredients-item">
-              <label for="milk-check" class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="milk" id="milk-check">
-                <span class="control-mark"></span>
-                <span class="control-label">Молоко</span>
-              </label>
-            </li>
-            <li class="finding-progamm__ingredients-item">
-              <label for="vitamins-check" class="control">
-                <input class="visually-hidden control-input" type="checkbox" name="vitamins" id="vitamins-check">
-                <span class="control-mark"></span>
-                <span class="control-label">Витамины</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-      </div>
-      <a class="finding-progamm__button button button--primary" href="form.html">Отправить заявку</a>
-      <span class="note">* — Обязательные поля</span>
-
       </div>
     </section>
-    <section class="cooperation-form container">
+    <section class="cooperation-form">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__container">
-        <span class="cooperation__container-invitation">Приглашаем<br> к сотрудничеству дилеров!</span>
-        <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <div class="cooperation__container  container">
+        <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
+        <div class="cooperation__container-adress">
+          <span class="cooperation__container-adress1">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="cooperation__container-adress2">Санкт-Петербург</span>
+        </div>
       </div>
     </section>
     <section class="map">
+      <div class="linene"></div>
       <h2 class="visually-hidden">Местоположение</h2>
       <div class="map__container">
-        <img class="map-img" src="images/map.jpg" alt="Карта" width="320" height="362">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853352001393!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650900586847!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" width="320" height="362" allowfullscreen
+          title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </iframe>
         <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
+        <div class="map_cooperation">
+          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="cooperation__container-adress">
+            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+          </div>
+        </div>
       </div>
+    </section>
     </section>
   </main>
   <footer class="page-footer">
@@ -273,9 +297,6 @@
       </div>
     </div>
   </footer>
-  </footer>
 </body>
-
-
 
 </html>

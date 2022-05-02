@@ -1,9 +1,35 @@
 .main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
+  display: flex;
+  align-items: center;
   z-index: 1;
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding-top: 53px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    padding-right: 12px;
+  }
 }
 
 .main-header__menu {
@@ -23,5 +49,45 @@
   text-transform: uppercase;
   color: #000000;
   padding-inline-start: 0;
+
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    padding-right: 94px;
+  }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:focus {
+  opacity: 0.6;
+}
+
+.main-header__catenergy-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__catenergy-logo:focus {
+  opacity: 0.6;
+}
+
+.main-header__logo-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo-image {
+    display: none;
+  }
+
+  .catenergy-logo {
+    display: none;
+  }
+
+  .main-header__logo-tablet {
+    display: flex;
+  }
 }
 
