@@ -41,20 +41,20 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a class="navigation__link-desk navigation__link--current">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link-desk" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
+          <a class="navigation__link-desk" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-catalog">
     <section class="product-catalog  container">
-      <div class="product-catalog__wrapper  container">
+      <div class="product-catalog__wrapper">
         <h1 class="product-catalog__title">Каталог продукции</h1>
         <ul class="product-catalog__list">
           <li class="product-catalog__card">
@@ -283,8 +283,8 @@
       </div>
     </section>
 
-    <section class="add-catalog">
-      <div class="add-catalog__wrapper container">
+    <section class="add-catalog container">
+      <div class="add-catalog__wrapper">
 
         <div class="add-catalog__title-line">
           <h2 class="add-catalog__title">Дополнительные товары</h2>
@@ -349,7 +349,7 @@
                 fill="#fff" /></svg>
 
           </div>
-          <div class="promo__transparent-bag"></div>
+          <div class="promo__transparent-bag-desk"></div>
           <span class="promo__text">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
         </div>
       </div>
@@ -377,11 +377,14 @@
       </div>
     </section>
     </section>
-    <section class="cooperation-form container">
+    <section class="cooperation-form">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__container">
-        <span class="cooperation__container-invitation">Приглашаем<br> к сотрудничеству дилеров!</span>
-        <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8> Санкт-Петербург</span>
+      <div class="cooperation__container container">
+        <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
+        <div class="cooperation__container-adress">
+          <span class="cooperation__container-adress1">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="cooperation__container-adress2">Санкт-Петербург</span>
+        </div>
       </div>
     </section>
     <section class="map">
@@ -395,8 +398,11 @@
         </iframe>
         <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
         <div class="map_cooperation">
-          <span class="cooperation__container-invitation">Приглашаем<br> к сотрудничеству дилеров!</span>
-          <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8 <br> <br>Санкт-Петербург</span>
+          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="cooperation__container-adress">
+            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+          </div>
         </div>
       </div>
     </section>
@@ -454,6 +460,5 @@
     </div>
   </footer>
 </body>
-
 
 </html>

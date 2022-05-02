@@ -15,6 +15,7 @@
   @media (min-width: @desktop-width) {
     position: relative;
     padding-bottom: 86px;
+    width: 100%;
   }
 }
 
@@ -164,7 +165,10 @@
 }
 
 .add-catalog-promo {
+  display: none;
+
   @media (min-width: @desktop-width) {
+    display: inline;
     margin: 0 auto;
     position: absolute;
     background-image: url("../images/promo-desk.png");
@@ -172,12 +176,7 @@
     width: 245px;
     height: 289px;
     top: 119px;
-    right: 110px;
+    right: 0;
     z-index: -1;
   }
-
 }
-
-
-
-

@@ -5,9 +5,10 @@
   left: 0;
   z-index: 100;
   background-color: #ffffff;
-  display: non;
+  display: none;
 
   @media (min-width: @tablet-width) {
+    display: inline;
     position: relative;
     z-index: 0;
     width: 100%;
@@ -15,10 +16,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    display: inline;
     color: #ffffff;
+    background-color: transparent;
   }
 }
-
 
 .back-cat-desk {
   @media (min-width: @desktop-width) {
@@ -28,12 +30,11 @@
     background-repeat: no-repeat;
     width: 720px;
     height: 694px;
-    top: -63px;
-    right: -110px;
+    top: 0;
+    left: 50%;
     z-index: -1;
   }
 }
-
 
 .transparent-cat-desk {
   @media (min-width: @tablet-width) {
@@ -42,18 +43,15 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    width: 720px;
+    width: 100%;
     height: 694px;
     position: absolute;
-    top: -63px;
-    right: -110px;
+    top: 0;
+    left: 50%;
     background-color: @maingreen;
     opacity: 0.85;
   }
 }
-
-
-
 
 .navigation__list {
   display: flex;
@@ -110,7 +108,6 @@
     font-size: 18px;
     line-height: 24px;
     justify-content: left;
-
   }
 
   @media (min-width: @desktop-width) {
@@ -132,6 +129,10 @@
 
 .navigation__list:first-child {
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @desktop-width) {
+    border-top: none;
+  }
 }
 
 .navigation__item-main {
@@ -151,6 +152,10 @@
     color: #ffffff;
     z-index: 1;
   }
+}
+
+.navigation__link-desk {
+  color: #000000;
 }
 
 .popover-close-button {

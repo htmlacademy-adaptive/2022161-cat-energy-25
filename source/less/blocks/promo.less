@@ -14,7 +14,6 @@
   @media (min-width: @desktop-width) {
     display: none;
   }
-
 }
 
 .promo__wrapper {
@@ -31,9 +30,10 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../images/cat-bag-tab.png");
-    width: 708px;
-    height: 100%;
+    width: 707px;
+    height: 200px;
     border: none;
+    flex-wrap: wrap;
   }
 }
 
@@ -56,14 +56,35 @@
   }
 }
 
+.promo__transparent-bag-desk {
+  @media (min-width: @desktop-width) {
+    z-index: -1;
+    width: 245px;
+    height: 289px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @maingreen;
+    opacity: 0.85;
+  }
+}
+
 .promo__icon {
   display: flex;
   justify-content: center;
   z-index: 1;
   padding-top: 15px;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 77px;
+    padding-bottom: 15px;
+    width: 80px;
+  }
+
   @media (min-width: @desktop-width) {
     z-index: 3;
+    padding-top: 56px;
+    padding-bottom: 0;
   }
 }
 
@@ -80,7 +101,17 @@
   text-align: center;
   padding-top: 48px;
 
+  @media (min-width: @tablet-width) {
+    padding-left: 120px;
+    padding-bottom: 48px;
+    text-align: left;
+    width: 161px;
+  }
+
   @media (min-width: @desktop-width) {
     color: #ffffff;
-}
+    padding-left: 41px;
+    text-align: center;
+    padding-top: 46px;
+  }
 }

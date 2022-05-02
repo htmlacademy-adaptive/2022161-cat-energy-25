@@ -1,15 +1,27 @@
+.cooperation-form {
+  background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .cooperation__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 26px;
   padding-bottom: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
+
 
   @media (min-width: @tablet-width) {
-    padding-top: 52px;
-    padding-bottom: 52px;
+    padding-top: 60px;
+    padding-bottom: 56px;
     padding-left: 40px;
+    padding-right: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -19,6 +31,7 @@
 
 .cooperation__container-invitation {
   width: 138px;
+  height: 60px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -29,6 +42,7 @@
     width: 200px;
     font-size: 20px;
     line-height: 26px;
+    height: 83px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,11 +50,28 @@
     padding-left: 80px;
     padding-top: 60px;
     padding-right: 87px;
-
   }
 }
 
 .cooperation__container-adress {
+  line-height: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 314px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 20px;
+  }
+}
+
+.cooperation__container-adress1 {
   font-family: "ArialMT", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -50,7 +81,6 @@
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     margin-right: 0;
-    padding-right: 40px;
     width: 160px;
     font-size: 16px;
     line-height: 20px;
@@ -66,14 +96,67 @@
   }
 }
 
-.cooperation-form {
+.cooperation__container-adress2 {
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
   @media (min-width: @tablet-width) {
-    background-color: #f2f2f2;
+    margin: 0 auto;
+    margin-right: 0;
+    padding-top: 20px;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    display: none;
+    width: 155px;
+    padding-top: 56px;
+    padding-right: 87px;
+    text-align: start;
   }
+}
 
+.cooperation__container-invitation-map {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 74px;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+.cooperation__container-adress1-map {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    width: 100%;
+    padding-top: 56px;
+    padding-right: 87px;
+    text-align: start;
+  }
+}
+
+.cooperation__container-adress2-map {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    width: 100%;
+    padding-top: 19px;
+    padding-right: 87px;
+    text-align: start;
+  }
 }
 

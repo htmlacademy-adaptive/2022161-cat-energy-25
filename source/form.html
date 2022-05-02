@@ -41,26 +41,26 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a class="navigation__link-desk navigation__link--current">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link-desk" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="form.html">Подбор программы</a>
+          <a class="navigation__link-desk" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-form container">
+  <main class="main-form">
     <section class="finding-progamm">
       <div class="finding-progamm-block">
-        <div class="finding-progamm__anketa container">
-          <h1 class="finding-progamm__title">Подбор программы</h1>
-          <span class="finding-progamm__text">Заполните анкету, и мы подберем программу питания для вашего кота</span>
-
+        <div class="finding-progamm__anketa">
+          <h1 class="finding-progamm__title container">Подбор программы</h1>
+          <span class="finding-progamm__text container">Заполните анкету, и мы подберем<br>программу питания для вашего
+            кота</span>
           <div class="finding-progamm__desk-v">
-            <div class="finding-progamm__desk-anketa">
+            <div class="finding-progamm__desk-anketa container">
               <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="finding-progamm__anketa-form anketa-name" for="name-form">Имя:*</label>
                 <div class="finding-progamm__form-name">
@@ -83,9 +83,9 @@
               </form>
             </div>
             <div class="finding-progamm__targets">
-              <fieldset class="finding-progamm__filter-target">
+              <fieldset class="finding-progamm__filter-target container">
                 <legend class="visually-hidden">Выбор цели</legend>
-                <ul class="finding-progamm__target-filter-list">
+                <ul class="finding-progamm__target-filter-list container">
                   <li class="finding-progamm__target-filter-item">
                     <label for="slim-check" class="control">
                       <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
@@ -114,17 +114,16 @@
             </div>
           </div>
           <div class="finding-progamm__contacts">
-            <div class="finding-progamm__contacts-block">
+            <div class="lines-contacts"></div>
+            <div class="finding-progamm__contacts-block container">
               <h2 class="finding-progamm__contacts-title">Контактные данные (владельца кота)</h2>
-              <div class="contacts-title-line"></div>
             </div>
-            <div class="finding-progamm__desk">
+            <div class="finding-progamm__desk container">
               <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="contacts-form contacts-email" for="email-form">e-mail:*</label>
                 <div class="finding-progamm__form-contacts-email">
-                  <input class="finding-progamm__email" value="KUKLACHEV@GMAIL.COM" type="email" name="email-form"
+                  <input class="finding-progamm__email" placeholder="KUKLACHEV@GMAIL.COM" type="email" name="email-form"
                     id="email-form" required="">
-
                   <button class="icon-email">
                     <svg class="email-icon" aria-hidden="true" focusable="false" width="19" height="14"
                       viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +136,7 @@
               <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
                 <label class="contacts-form contacts-phone" for="phone-form">Телефон:*</label>
                 <div class="finding-progamm__form-contacts-phone">
-                  <input class="finding-progamm__phone" value="8 (960) 900-60-90" type="tel" name="phone-form"
+                  <input class="finding-progamm__phone" placeholder="8 (960) 900-60-90" type="tel" name="phone-form"
                     id="phone-form" required="">
                   <button class="icon-phone"><svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -157,25 +156,22 @@
             </div>
           </div>
         </div>
-        <div class="finding-progamm__comments container">
+        <div class="finding-progamm__comments">
+          <div class="lines-comments"></div>
           <div class="finding-progamm__comments-title-line">
             <h2 class="finding-progamm__comments-title">Комментарий</h2>
-            <div class="comments-title-line"></div>
           </div>
-
-          <form class="comments-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="comments-form" for="comments-form"></label>
+          <form class="comments-form container" action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-comments">
-              <input class="comments-field" value="Расскажите обо всех повадках кота" type="text" name="comments-form"
-                id="comments-form" required="">
+              <textarea class="comments-field" rows="5" placeholder="Расскажите обо всех повадках кота"
+                name="comments-form" required=""></textarea>
             </div>
-
           </form>
         </div>
-        <div class="finding-progamm__add container">
-          <div class="finding-progamm__add-title-line">
+        <div class="finding-progamm__add">
+          <div class="lines-add"></div>
+          <div class="finding-progamm__add-title-line container">
             <h2 class="finding-progamm__add-title">Дополнительно</h2>
-            <div class="add-title-line"></div>
           </div>
           <fieldset class="ingredients">
             <ul class="finding-progamm__ingredients-list">
@@ -215,17 +211,20 @@
           <a class="finding-progamm__button button button--primary" href="form.html">Отправить заявку</a>
           <span class="note">* — Обязательные поля</span>
         </div>
-
       </div>
     </section>
-    <section class="cooperation-form container">
+    <section class="cooperation-form">
       <h2 class="visually-hidden">Сотрудничество</h2>
-      <div class="cooperation__container">
+      <div class="cooperation__container  container">
         <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
-        <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        <div class="cooperation__container-adress">
+          <span class="cooperation__container-adress1">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="cooperation__container-adress2">Санкт-Петербург</span>
+        </div>
       </div>
     </section>
     <section class="map">
+      <div class="linene"></div>
       <h2 class="visually-hidden">Местоположение</h2>
       <div class="map__container">
         <iframe
@@ -236,10 +235,14 @@
         </iframe>
         <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
         <div class="map_cooperation">
-          <span class="cooperation__container-invitation">Приглашаем<br> к сотрудничеству дилеров!</span>
-          <span class="cooperation__container-adress">ул. Большая Конюшенная, д. 19/8 <br> <br>Санкт-Петербург</span>
+          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="cooperation__container-adress">
+            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+          </div>
         </div>
       </div>
+    </section>
     </section>
   </main>
   <footer class="page-footer">
@@ -295,7 +298,5 @@
     </div>
   </footer>
 </body>
-
-
 
 </html>
