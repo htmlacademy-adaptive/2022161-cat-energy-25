@@ -36,16 +36,22 @@
           </defs>
         </svg>
       </a>
-      <a class="main-header__toggle" href="#">
+      <a class="main-header__toggle main-header__toggle-closed" href="#">
         <span class="visually-hidden">Открыть меню</span>
-        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /></svg>
+        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5"
+            d="M0-.75h24.758" />
+          <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5"
+            d="M0-.75h24.758" /></svg>
       </a>
     </ul>
-    <nav class="navigation">
+    <nav class="navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current">Главная</a>
+          <a class="navigation__link navigation__link--current-index">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">Каталог продукции</a>
@@ -352,6 +358,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
