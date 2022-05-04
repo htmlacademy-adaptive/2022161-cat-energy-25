@@ -12,13 +12,13 @@
 <body class="page__body">
   <header class="main-header container">
     <ul class="main-header__menu">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
           height="38">
         <img class="main-header__logo-tablet" alt="Логотип Кэт Энерджи" src="images/logo-tablet.svg" width="174"
           height="52">
       </a>
-      <a class="main-header__catenergy-logo">
+      <a class="main-header__catenergy-logo" href="index.html">
         <svg class="catenergy-logo" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#a)" fill="#111">
@@ -32,22 +32,28 @@
           </defs>
         </svg>
       </a>
-      <a class="main-header__toggle" href="#">
+      <a class="main-header__toggle main-header__toggle-closed" href="#">
         <span class="visually-hidden">Открыть меню</span>
-        <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /></svg>
+        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5"
+            d="M0-.75h24.758" />
+          <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5"
+            d="M0-.75h24.758" /></svg>
       </a>
     </ul>
-    <nav class="navigation">
+    <nav class="navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link-desk navigation__link--current">Главная</a>
+          <a class="navigation__link-desk" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link-desk" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link-desk" href="form.html">Подбор программы</a>
+          <a class="navigation__link-desk navigation__link--current" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -82,10 +88,10 @@
                 </div>
               </form>
             </div>
-            <div class="finding-progamm__targets">
+            <div class="finding-progamm__targets container">
               <fieldset class="finding-progamm__filter-target container">
                 <legend class="visually-hidden">Выбор цели</legend>
-                <ul class="finding-progamm__target-filter-list container">
+                <ul class="finding-progamm__target-filter-list">
                   <li class="finding-progamm__target-filter-item">
                     <label for="slim-check" class="control">
                       <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
@@ -297,6 +303,9 @@
       </div>
     </div>
   </footer>
+  
+  <script src="js/script.js"></script>
 </body>
+
 
 </html>
