@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт Энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -37,7 +37,8 @@
         <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /></svg>
-        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5"
             d="M0-.75h24.758" />
           <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5"
@@ -47,7 +48,7 @@
     <nav class="navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link-desk"  href="index.html">Главная</a>
+          <a class="navigation__link-desk" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link-desk navigation__link--current" href="catalog.html">Каталог продукции</a>
@@ -67,8 +68,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog1-500.png" alt="Продукт курица 500 грамм"
-                    width="68" height="86">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog1-500-mob.png, images/catalog1-500-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog1-500-tab.png, images/catalog1-500-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog1-500-tab.png"
+                      alt="Продукт курица 500 грамм" width="68" height="86">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -97,8 +105,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog1-1000.png" alt="Продукт курица 500 грамм"
-                    width="84" height="101">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog1-1000-mob.png, images/catalog1-1000-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog1-1000-tab.png, images/catalog1-1000-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog1-1000-tab.png"
+                      alt="Продукт курица 500 грамм" width="84" height="101">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -127,8 +142,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog2-500.png" alt="Продукт рыба 500 грамм"
-                    width="68" height="86">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog2-500-mob.png, images/catalog2-500-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog2-500-tab.png, images/catalog2-500-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog2-500-tab.png" alt="Продукт рыба 500 грамм"
+                      width="68" height="86">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -157,8 +179,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog2-1000.png" alt="Продукт рыба 1000 грамм"
-                    width="84" height="101">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog2-1000-mob.png, images/catalog2-1000-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog2-1000-tab.png, images/catalog2-1000-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog2-1000-tab.png"
+                      alt="Продукт рыба 1000 грамм" width="84" height="101">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -187,8 +216,16 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog3-500.png" alt="Продукт гречка 500 грамм"
-                    width="68" height="86">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog3-500-mob.png, images/catalog3-500-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog3-500-tab.png, images/catalog3-500-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog3-500-tab.png"
+                      alt="Продукт гречка 500 грамм" width="68" height="86">
+                  </picture>
+
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -217,8 +254,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog3-1000.png"
-                    alt="Продукт гречка 1000 грамм" width="84" height="101">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog3-1000-mob.png, images/catalog3-1000-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog3-1000-tab.png, images/catalog3-1000-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog3-1000-tab.png"
+                      alt="Продукт гречка 1000 грамм" width="84" height="101">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
@@ -247,8 +291,15 @@
             <div class="product-catalog__card-center">
               <div class="product-catalog__card-nobutton">
                 <a class="product-catalog__card-img" href="#">
-                  <img class="product-catalog__card-image" src="images/catalog4-500.png" alt="Продукт рис 500 грамм"
-                    width="68" height="86">
+
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="images/catalog4-500-mob.png, images/catalog4-500-mob2x.png">
+                    <source media="(min-width: @tablet-width)"
+                      srcset="images/catalog4-500-tab.png, images/catalog4-500-tab2x.png">
+                    <img class="product-catalog__card-image" src="images/catalog4-500-tab.png" alt="Продукт рис 500 грамм"
+                      width="68" height="86">
+                  </picture>
                 </a>
                 <div class="product-catalog__card-text">
                   <a class="product-catalog__card-link" href="#">
