@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт Энерджи</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,7 +41,8 @@
         <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path stroke="#000" stroke-width="1.5" d="M0 1.25h24M0 9.25h24M0 17.25h24" /></svg>
-        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
           <path transform="scale(.97098 1.0282) rotate(-45 24.51 7.237)" stroke="#000" stroke-width="1.5"
             d="M0-.75h24.758" />
           <path transform="matrix(.68659 .72705 -.68659 .72705 1 2)" stroke="#000" stroke-width="1.5"
@@ -67,8 +68,16 @@
       <div class="functional-food__slogan container">
         <h1 class="functional-food__title">Фунциональное питание для котов</h1>
         <span class="functional-food__text">Занялся собой? Займись котом!</span>
-        <img class="functional-food__img" src="images/сat-glass-mobile.png" alt="Стакан еды" width="280" height="270">
-        <div class="transparent-cat"></div>
+
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/сat-glass-mobile.png, images/сat-glass-mobile2x.png">
+          <source media="(min-width: @tablet-width)"
+            srcset="images/сat-glass-tablet.png, images/сat-glass-tablet2x.png">
+          <img class="functional-food__img" src="images/сat-glass-mobile.png" alt="Стакан еды" width="280" height="270">
+        </picture>
+
+        <div class="transparent-cat">
+        </div>
         <a class="functional-food__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -99,10 +108,13 @@
             <div class="targets-card__button">
               <a href="#" class="targets-card__button-slim">
                 <span class="targets-card__button-title">Каталог Slim</span>
-                <svg class="targets-card__button-title" aria-hidden="true" focusable="false" width="33" height="12"
+                <svg class="targets-card-arrow" aria-hidden="true" focusable="false" width="33" height="12"
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M.129 6h18" />
                   <path d="m24.129 6-6.75 5.196V.804L24.129 6Z" fill="#000" /></svg>
+                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#000" stroke-width="2" d="M0 6h26" />
+                  <path d="m32 6-6.75 5.196V.804L32 6Z" fill="#000" /></svg>
               </a>
             </div>
           </li>
@@ -129,10 +141,13 @@
             <div class="targets-card__button">
               <a href="#" class="targets-card__button-slim">
                 <span class="targets-card__button-title">Каталог Slim</span>
-                <svg class="targets-card__button-title" aria-hidden="true" focusable="false" width="33" height="12"
+                <svg class="targets-card-arrow" aria-hidden="true" focusable="false" width="33" height="12"
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M.129 6h18" />
                   <path d="m24.129 6-6.75 5.196V.804L24.129 6Z" fill="#000" /></svg>
+                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#000" stroke-width="2" d="M0 6h26" />
+                  <path d="m32 6-6.75 5.196V.804L32 6Z" fill="#000" /></svg>
               </a>
             </div>
           </li>
@@ -262,11 +277,16 @@
         </div>
         <div class="example-range-desk">
           <div class="example__images">
-            <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
-              height="232">
-            <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="296" height="511">
-            <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот до похудения" width="296"
-              height="511">
+            <picture>
+              <source media="(max-width: 767px)" srcset="images/cat-before-mobile.png, images/cat-before-mobile2x.png">
+              <source media="(min-width: @tablet-width)" srcset="images/cat-fat.png, images/cat-fat2x.png">
+              <source media="(min-width: @tablet-width)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
+              <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+                height="232">
+              <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
+              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот до похудения" width="545"
+                height="520">
+            </picture>
           </div>
           <div class="range-scale">
             <span class="range-title">Было</span>
