@@ -16,3 +16,12 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('main-header__toggle-onened');
   }
 });
+
+
+function fun1() {
+  let exampleRange = document.querySelector('.example__block-img-fat');
+  let r1 = document.getElementById('myRange');
+
+  exampleRange.style.width = r1.value+'px';
+
+};
