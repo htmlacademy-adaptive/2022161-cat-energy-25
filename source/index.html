@@ -279,25 +279,33 @@
         </div>
         <div class="example-range-desk">
           <div class="example__images">
+
             <picture>
-              <source media="(max-width: 767px)" srcset="images/cat-before-mobile.png, images/cat-before-mobile2x.png">
               <source media="(min-width: @tablet-width)" srcset="images/cat-fat.png, images/cat-fat2x.png">
               <source media="(min-width: @tablet-width)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
-              <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+
+              <div class="example__block-img-fat-mob">
+                <div class="example__img-fat-bg1-mob"></div>
+                <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+                  height="232">
+                <div class="example__img-fat-bg2-mob"></div>
+              </div>
+              <img class="example__img-after" src="images/cat-after-mobile.png" alt="Кот после похудения" width="201"
                 height="232">
+
               <div class="example__block-img-fat">
                 <div class="example__img-fat-bg1"></div>
                 <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
                 <div class="example__img-fat-bg2"></div>
               </div>
-              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот до похудения" width="545"
+              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
                 height="520">
             </picture>
           </div>
           <div class="range-scale">
             <button class="button-before" type="button">Было</button>
-              <input type="range" min="0" max="550" value="290" class="range-scale-long" id="myRange" oninput="fun1()">
-
+            <input type="range" min="0" max="550" value="50%" class="range-scale-long" id="myRange" oninput="fun1()">
+            <div class="range-mob-thumb"></div>
             <button class="button-after" type="button">Стало</button>
           </div>
         </div>
