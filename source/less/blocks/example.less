@@ -147,6 +147,7 @@
   line-height: 20px;
   justify-content: center;
   text-transform: uppercase;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
     width: 180px;
@@ -156,6 +157,7 @@
     text-align: end;
     margin: 0 auto;
     margin-right: 0;
+    padding-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -179,20 +181,6 @@
   }
 }
 
-.range-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-    border-bottom: 1px dashed #cdcdcd;
-  }
-}
 
 .range-scale {
   display: flex;
@@ -201,6 +189,7 @@
   margin-top: 15px;
   margin-bottom: 40px;
   justify-content: space-between;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 25px;
@@ -224,11 +213,121 @@
   }
 }
 
+.example__block-img-fat {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: relative;
+    width: 296px;
+    height: 520px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 32px;
+  }
+}
+
+.example__block-img-fat-mob {
+  position: relative;
+  width: 131px;
+  height: 232px;
+  overflow: hidden;
+  z-index: 1;
+  left: 12px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.example__img-fat-bg1 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    position: absolute;
+    width: 600px;
+    height: 219px;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 164px;
+  }
+}
+
+.example__img-fat-bg1-mob {
+  position: absolute;
+  width: 600px;
+  height: 219px;
+  background-color: #eaeaea;
+  overflow: hidden;
+  z-index: -2;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.example__img-fat-bg2 {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    position: absolute;
+    width: 600px;
+    height: 219px;
+    top: 305px;
+    background-color: #eaeaea;
+    overflow: hidden;
+    z-index: -1;
+  }
+}
+
+.example__img-fat-bg2-mob {
+  position: absolute;
+  width: 600px;
+  height: 100px;
+  top: 148px;
+  background-color: #eaeaea;
+  overflow: hidden;
+  z-index: -1;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .example__img-fat {
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: inline;
+    position: absolute;
+    left: -14px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 3;
   }
 }
 
@@ -236,7 +335,32 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    position: absolute;
+    display: inline;
+    margin-left: 158px;
+    top: 85px;
+    left: -106px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 3px;
+    margin-left: 192px;
+  }
+}
+
+.example__img-after {
+  position: absolute;
+  display: inline;
+  margin-left: 158px;
+  top: 0;
+  left: -94px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
 
@@ -246,12 +370,19 @@
   }
 }
 
+
 .example__images {
+  position: relative;
   display: flex;
-  justify-content: center;
   width: 280px;
-  padding-top: 80px;
+  padding-top: 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    justify-content: left;
+    width: 100%;
+    padding-top: 80px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-top: 0;
@@ -259,3 +390,130 @@
     width: 592px;
   }
 }
+
+.button-before {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #eaeaea;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px dashed #cdcdcd;
+  }
+}
+
+.button-after {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #eaeaea;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 1px dashed #cdcdcd;
+  }
+}
+
+.range-scale-long {
+  appearance: none;
+  width: 86px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin-top: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    height: 6px;
+    background-color: #cdcdcd;
+    border-radius: 6px;
+    margin-top: 12px;
+  }
+}
+
+.range-scale-long::-webkit-slider-thumb {
+  appearance: none;
+  width: 6px;
+  height: 6px;
+  color: #68b738;
+  border-radius: 5px;
+  margin-left: 3px;
+  cursor: pointer;
+  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    appearance: none;
+    width: 34px;
+    height: 34px;
+    background-color: #68b738;
+    border: 13px solid #ffffff;
+    outline: 1px solid #cdcdcd;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    padding: 0;
+  }
+}
+
+.range-mob-thumb {
+  position: absolute;
+  width: 43px;
+  min-width: 6px;
+  max-width: 77px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+  top: 9px;
+  left: 65px;
+  z-index: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.range-scale-long-slider {
+  position: absolute;
+  width: 36px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 6px;
+  top: 4px;
+  left: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 17px;
+    top: 4px;
+    left: 6px;
+  }
+}
+
+.range-scale-long-slider-point {
+  position: absolute;
+}
+
+

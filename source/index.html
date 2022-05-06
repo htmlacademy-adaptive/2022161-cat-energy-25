@@ -112,7 +112,8 @@
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M.129 6h18" />
                   <path d="m24.129 6-6.75 5.196V.804L24.129 6Z" fill="#000" /></svg>
-                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12"
+                  viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M0 6h26" />
                   <path d="m32 6-6.75 5.196V.804L32 6Z" fill="#000" /></svg>
               </a>
@@ -145,7 +146,8 @@
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M.129 6h18" />
                   <path d="m24.129 6-6.75 5.196V.804L24.129 6Z" fill="#000" /></svg>
-                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="targets-card-arrow-long" aria-hidden="true" focusable="false" width="32" height="12"
+                  viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M0 6h26" />
                   <path d="m32 6-6.75 5.196V.804L32 6Z" fill="#000" /></svg>
               </a>
@@ -277,21 +279,34 @@
         </div>
         <div class="example-range-desk">
           <div class="example__images">
+
             <picture>
-              <source media="(max-width: 767px)" srcset="images/cat-before-mobile.png, images/cat-before-mobile2x.png">
               <source media="(min-width: @tablet-width)" srcset="images/cat-fat.png, images/cat-fat2x.png">
               <source media="(min-width: @tablet-width)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
-              <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+
+              <div class="example__block-img-fat-mob">
+                <div class="example__img-fat-bg1-mob"></div>
+                <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+                  height="232">
+                <div class="example__img-fat-bg2-mob"></div>
+              </div>
+              <img class="example__img-after" src="images/cat-after-mobile.png" alt="Кот после похудения" width="201"
                 height="232">
-              <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
-              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот до похудения" width="545"
+
+              <div class="example__block-img-fat">
+                <div class="example__img-fat-bg1"></div>
+                <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
+                <div class="example__img-fat-bg2"></div>
+              </div>
+              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
                 height="520">
             </picture>
           </div>
           <div class="range-scale">
-            <span class="range-title">Было</span>
-
-            <span class="range-title">Стало</span>
+            <button class="button-before" type="button">Было</button>
+            <input type="range" min="0" max="550" value="50%" class="range-scale-long" id="myRange" oninput="fun1()">
+            <div class="range-mob-thumb"></div>
+            <button class="button-after" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -378,6 +393,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="js/script.js"></script>
 </body>
