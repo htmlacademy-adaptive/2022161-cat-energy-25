@@ -16,7 +16,12 @@
   color: #ffffff;
   height: 302px;
   background-image: url("../images/background-cat.jpg");
-  z-index: -1;
+  z-index: -2;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/background-cat2x.jpg");
+    background-size: 640px auto;
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -31,7 +36,7 @@
   left: 0;
   background-color: @maingreen;
   opacity: 0.85;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -53,7 +58,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    z-index: 1;
+    z-index: 2;
     top: 25px;
     width: 530px;
     height: 499px;
@@ -66,6 +71,7 @@
   height: 40px;
   margin: 0 auto;
   margin-top: 458px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 223px;
