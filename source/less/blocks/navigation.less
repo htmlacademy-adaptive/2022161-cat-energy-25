@@ -64,7 +64,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/background-cat-desk2x.jpg");
-      background-size: 1440px auto;
+      background-size: 720px auto;
     }
   }
 }
@@ -161,14 +161,18 @@
 
 .navigation__link--current {
   padding-top: 9px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
   border-bottom: 2px solid @maingreen;
 }
 
 .navigation__link--current-index {
   padding-top: 9px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
   border-bottom: 2px solid #ffffff;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @maingreen;
+  }
 }
 
 .navigation__list:first-child {
@@ -206,4 +210,3 @@
   top: 0;
   right: 0;
 }
-

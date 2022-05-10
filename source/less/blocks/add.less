@@ -50,31 +50,26 @@
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 9px;
-  left: 5px;
+  top: 13px;
+  left: 9px;
   width: 2px;
-  height: 7px;
+  height: 11px;
   background-color: @maingreen;
   content: "";
+  transform: rotate(-40deg);
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 4px;
-  left: 11px;
+  top: 5px;
+  left: 18px;
   width: 2px;
-  height: 12px;
+  height: 19px;
   background-color: @maingreen;
   content: "";
+  transform: rotate(40deg);
 }
 
-.control-input [type="checkbox"]:checked + .control-mark::before {
-  transform: rotate(-45deg);
-}
-
-.control-input [type="checkbox"]:checked + .control-mark::after {
-  transform: rotate(45deg);
-}
 
 .ingredients {
   margin: 0 auto;
