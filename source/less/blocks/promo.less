@@ -28,12 +28,22 @@
   height: 290px;
   background-image: url("../images/cat-bag.png");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/cat-bag2x.png");
+    background-size: 280px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../images/cat-bag-tab.png");
     width: 707px;
     height: 200px;
     border: none;
     flex-wrap: wrap;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/cat-bag-tab2x.png");
+      background-size: 707px auto;
+    }
   }
 }
 

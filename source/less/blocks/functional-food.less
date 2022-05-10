@@ -18,6 +18,11 @@
   background-image: url("../images/background-cat.jpg");
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/background-cat2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: none;
   }
@@ -31,7 +36,7 @@
   left: 0;
   background-color: @maingreen;
   opacity: 0.85;
-  z-index: -1;
+  z-index: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -48,7 +53,7 @@
     z-index: -1;
     top: 265px;
     width: 631px;
-    height: 609px;
+    height: 594px;
     left: 117px;
   }
 
@@ -57,7 +62,7 @@
     top: 25px;
     width: 530px;
     height: 499px;
-    left: 586px;
+    left: 567px;
   }
 }
 
@@ -66,6 +71,7 @@
   height: 40px;
   margin: 0 auto;
   margin-top: 458px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 223px;

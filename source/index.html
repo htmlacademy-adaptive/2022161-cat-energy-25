@@ -65,20 +65,21 @@
   </header>
   <main class="main-index">
     <section class="functional-food">
+
       <div class="functional-food__slogan container">
+
         <h1 class="functional-food__title">Фунциональное питание для котов</h1>
         <span class="functional-food__text">Занялся собой? Займись котом!</span>
 
         <picture>
-          <source media="(max-width: 767px)" srcset="images/сat-glass-mobile.png, images/сat-glass-mobile2x.png">
-          <source media="(min-width: @tablet-width)"
-            srcset="images/сat-glass-tablet.png, images/сat-glass-tablet2x.png">
-          <img class="functional-food__img" src="images/сat-glass-mobile.png" alt="Стакан еды" width="280" height="270">
+          <source media="(min-width: 768px)"
+            srcset="images/сat-glass-tablet.png 1x, images/сat-glass-tablet2x.png 2x">
+          <img class="functional-food__img" src="images/сat-glass-mobile.png" srcset="images/сat-glass-mobile2x.png 2x" alt="Стакан еды" width="280" height="270">
         </picture>
 
-        <div class="transparent-cat">
-        </div>
+        <div class="transparent-cat"></div>
         <a class="functional-food__button button button--primary" href="form.html">Подобрать программу</a>
+
       </div>
     </section>
     <section class="targets">
@@ -106,7 +107,7 @@
               деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <div class="targets-card__button">
-              <a href="#" class="targets-card__button-slim">
+              <a href="#Catalog" class="targets-card__button-slim">
                 <span class="targets-card__button-title">Каталог Slim</span>
                 <svg class="targets-card-arrow" aria-hidden="true" focusable="false" width="33" height="12"
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,8 +141,8 @@
             <p class="targets-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <div class="targets-card__button">
-              <a href="#" class="targets-card__button-slim">
-                <span class="targets-card__button-title">Каталог Slim</span>
+              <a href="#Catalog" class="targets-card__button-slim">
+                <span class="targets-card__button-title">Каталог Pro</span>
                 <svg class="targets-card-arrow" aria-hidden="true" focusable="false" width="33" height="12"
                   viewBox="0 0 33 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path stroke="#000" stroke-width="2" d="M.129 6h18" />
@@ -280,26 +281,30 @@
         <div class="example-range-desk">
           <div class="example__images">
 
-            <picture>
-              <source media="(min-width: @tablet-width)" srcset="images/cat-fat.png, images/cat-fat2x.png">
-              <source media="(min-width: @tablet-width)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
 
-              <div class="example__block-img-fat-mob">
-                <div class="example__img-fat-bg1-mob"></div>
+            <div class="example__block-img-fat-mob">
+              <div class="example__img-fat-bg1-mob"></div>
+              <picture>
+                <source media="(min-width: 768px" srcset="images/cat-fat.png, images/cat-fat2x.png">
                 <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
                   height="232">
-                <div class="example__img-fat-bg2-mob"></div>
-              </div>
+              </picture>
+              <div class="example__img-fat-bg2-mob"></div>
+            </div>
+
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
               <img class="example__img-after" src="images/cat-after-mobile.png" alt="Кот после похудения" width="201"
                 height="232">
+            </picture>
 
-              <div class="example__block-img-fat">
-                <div class="example__img-fat-bg1"></div>
-                <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
-                <div class="example__img-fat-bg2"></div>
-              </div>
-              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
-                height="520">
+            <div class="example__block-img-fat">
+              <div class="example__img-fat-bg1"></div>
+              <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
+              <div class="example__img-fat-bg2"></div>
+            </div>
+            <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
+              height="520">
             </picture>
           </div>
           <div class="range-scale">
