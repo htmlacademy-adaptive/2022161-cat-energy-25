@@ -72,10 +72,9 @@
         <span class="functional-food__text">Занялся собой? Займись котом!</span>
 
         <picture>
-          <source media="(max-width: 767px)" srcset="images/сat-glass-mobile.png, images/сat-glass-mobile2x.png">
-          <source media="(min-width: @tablet-width)"
-            srcset="images/сat-glass-tablet.png, images/сat-glass-tablet2x.png">
-          <img class="functional-food__img" src="images/сat-glass-mobile.png" alt="Стакан еды" width="280" height="270">
+          <source media="(min-width: 768px)"
+            srcset="images/сat-glass-tablet.png 1x, images/сat-glass-tablet2x.png 2x">
+          <img class="functional-food__img" src="images/сat-glass-mobile.png" srcset="images/сat-glass-mobile2x.png 2x" alt="Стакан еды" width="280" height="270">
         </picture>
 
         <div class="transparent-cat"></div>
@@ -282,26 +281,30 @@
         <div class="example-range-desk">
           <div class="example__images">
 
-            <picture>
-              <source media="(min-width: @tablet-width)" srcset="images/cat-fat.png, images/cat-fat2x.png">
-              <source media="(min-width: @tablet-width)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
 
-              <div class="example__block-img-fat-mob">
-                <div class="example__img-fat-bg1-mob"></div>
+            <div class="example__block-img-fat-mob">
+              <div class="example__img-fat-bg1-mob"></div>
+              <picture>
+                <source media="(min-width: 768px" srcset="images/cat-fat.png, images/cat-fat2x.png">
                 <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
                   height="232">
-                <div class="example__img-fat-bg2-mob"></div>
-              </div>
+              </picture>
+              <div class="example__img-fat-bg2-mob"></div>
+            </div>
+
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
               <img class="example__img-after" src="images/cat-after-mobile.png" alt="Кот после похудения" width="201"
                 height="232">
+            </picture>
 
-              <div class="example__block-img-fat">
-                <div class="example__img-fat-bg1"></div>
-                <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
-                <div class="example__img-fat-bg2"></div>
-              </div>
-              <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
-                height="520">
+            <div class="example__block-img-fat">
+              <div class="example__img-fat-bg1"></div>
+              <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
+              <div class="example__img-fat-bg2"></div>
+            </div>
+            <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
+              height="520">
             </picture>
           </div>
           <div class="range-scale">
