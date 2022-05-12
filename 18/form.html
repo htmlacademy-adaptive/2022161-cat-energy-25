@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт Энерджи</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2022161-cat-energy-25/18/">
+</head>
+
+<body class="page__body">
+  <header class="main-header container">
+    <ul class="main-header__menu">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
+          height="38">
+        <img class="main-header__logo-tablet" alt="Логотип Кэт Энерджи" src="images/logo-tablet.svg" width="174"
+          height="52">
+      </a>
+      <a class="main-header__catenergy-logo">
+        <svg class="catenergy-logo" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
+          fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#catenergy-icon"></use>
+        </svg>
+      </a>
+      <a class="main-header__toggle main-header__toggle-closed" href="#">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#burger"></use>
+        </svg>
+        <svg class="cross-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <use href="img/sprite.svg#cross"></use>
+        </svg>
+      </a>
+    </ul>
+    <nav class="navigation navigation--closed">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link-desk" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link-desk" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link-desk navigation__link--current" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-form">
+    <section class="finding-progamm">
+      <div class="finding-progamm-block">
+        <div class="finding-progamm__anketa">
+          <h1 class="finding-progamm__title container">Подбор программы</h1>
+          <span class="finding-progamm__text container">Заполните анкету, и мы подберем<br>программу питания для вашего
+            кота</span>
+          <div class="finding-progamm__desk-v">
+            <div class="finding-progamm__desk-anketa container">
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-name" for="name-form">Имя:*</label>
+                <div class="finding-progamm__form-name">
+                  <input class="finding-progamm__name-form" value="Барсик" type="text" name="name-form" id="name-form"
+                    required="">
+                </div>
+              </form>
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-weight" for="weight-form">Вес (кг):*</label>
+                <div class="finding-progamm__form-weight">
+                  <input class="finding-progamm__weight-form" value="7" type="text" name="weight" id="weight-form"
+                    required="">
+                </div>
+              </form>
+              <form class="finding-progamm__anketa-block" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="finding-progamm__anketa-form anketa-age" for="age-form">Возраст (лет):</label>
+                <div class="finding-progamm__form-age">
+                  <input class="finding-progamm__age-form" value="7" type="text" name="age" id="age-form" required="">
+                </div>
+              </form>
+            </div>
+            <div class="finding-progamm__targets container">
+              <fieldset class="finding-progamm__filter-target container">
+                <legend class="visually-hidden">Выбор цели</legend>
+                <ul class="finding-progamm__target-filter-list">
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="slim-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="slim" id="slim-check" value="slim"
+                        checked="">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="pro-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="pro" id="pro-check" value="pro">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="finding-progamm__target-filter-item">
+                    <label for="need-advise-check" class="control">
+                      <input class="visually-hidden control-input" type="radio" name="need-advise"
+                        id="need-advise-check" value="pro">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="finding-progamm__contacts">
+            <div class="lines-contacts"></div>
+            <div class="finding-progamm__contacts-block container">
+              <h2 class="finding-progamm__contacts-title">Контактные данные (владельца кота)</h2>
+            </div>
+            <div class="finding-progamm__desk container">
+              <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="contacts-form contacts-email" for="email-form">e-mail:*</label>
+                <div class="finding-progamm__form-contacts-email">
+                  <input class="finding-progamm__email" placeholder="KUKLACHEV@GMAIL.COM" type="email" name="email-form"
+                    id="email-form" required="">
+                  <button class="icon-email">
+                    <svg class="email-icon" aria-hidden="true" focusable="false" width="19" height="14"
+                      viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#envelope-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <form class="finding-progamm__contacts-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="contacts-form contacts-phone" for="phone-form">Телефон:*</label>
+                <div class="finding-progamm__form-contacts-phone">
+                  <input class="finding-progamm__phone" placeholder="8 (960) 900-60-90" type="tel" name="phone-form"
+                    id="phone-form" required="">
+                  <button class="icon-phone">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="finding-progamm__comments">
+          <div class="lines-comments"></div>
+          <div class="finding-progamm__comments-title-line">
+            <h2 class="finding-progamm__comments-title">Комментарий</h2>
+          </div>
+          <form class="comments-form container" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-comments">
+              <textarea class="comments-field" rows="5" placeholder="Расскажите обо всех повадках кота"
+                name="comments-form" required=""></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="finding-progamm__add">
+          <div class="lines-add"></div>
+          <div class="finding-progamm__add-title-line container">
+            <h2 class="finding-progamm__add-title">Дополнительно</h2>
+          </div>
+          <fieldset class="ingredients">
+            <ul class="finding-progamm__ingredients-list">
+              <li class="finding-progamm__ingredients-item">
+                <label for="sweetener-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="sweetener" id="sweetener-check">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Сахарозаменитель</span>
+                </label>
+              </li>
+              <li class="finding-progamm__ingredients-item">
+                <label for="drinking-water-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="drinking-water"
+                    id="drinking-water-check">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="finding-progamm__ingredients-item">
+                <label for="milk-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="milk" id="milk-check">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Молоко</span>
+                </label>
+              </li>
+              <li class="finding-progamm__ingredients-item">
+                <label for="vitamins-check" class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="vitamins" id="vitamins-check">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="finding-progamm-note container">
+          <a class="finding-progamm__button button button--primary" href="form.html">Отправить заявку</a>
+          <span class="note">* — Обязательные поля</span>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation-form">
+      <h2 class="visually-hidden">Сотрудничество</h2>
+      <div class="cooperation__container  container">
+        <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
+        <div class="cooperation__container-adress">
+          <span class="cooperation__container-adress1">ул. Большая Конюшенная, д. 19/8</span>
+          <span class="cooperation__container-adress2">Санкт-Петербург</span>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Местоположение</h2>
+      <div class="map__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853352001393!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650900586847!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" width="320" height="362" allowfullscreen
+          title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </iframe>
+        <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
+        <div class="map_cooperation">
+          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="cooperation__container-adress">
+            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <a class="footer-logo page-footer__logo">
+        <img class="footer-logo__image" alt="Логотип надпись" src="images/footer-logo2.svg" width="128" height="24">
+      </a>
+      <div class="footer-social">
+        <ul class="page-footer__social">
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="https://vkontakte.com/c/HTMLAcademyRUS">
+              <svg class="footer-social__icon" aria-hidden="true" focusable="false" width="28" height="22"
+                viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#vkontakte-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <svg class="footer-social__icon" aria-hidden="true" focusable="false" width="24" height="19"
+                viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#youtube-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social__button" href="https://www.telegram.com/c/HTMLAcademyRUS">
+              <svg class="footer-social__icon" aria-hidden="true" focusable="false" width="20" height="18"
+                viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#telegram-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-htmlacademy">
+        <a class="footer-htmlacademy__link" href="https://htmlacademy.ru/">
+          <div class="footer-htmlacademy__text">
+            <span class="footer-htmlacademy__text-logo">HTMLAcademy</span>
+          </div>
+          <div class="footer-logo-icon">
+            <svg class="footer-htmlacademy__logo" aria-hidden="true" focusable="false" width="27" height="34"
+              viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#footer-htmlacademy-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
