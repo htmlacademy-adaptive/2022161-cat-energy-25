@@ -11,10 +11,6 @@
 
 <body class="page__body">
 
-
-
-
-  <div class="back-cat-desk"></div>
   <div class="transparent-cat-desk"></div>
   <header class="main-header container">
 
@@ -185,8 +181,8 @@
               </svg>
 
               <svg class="methods__item-icon-watch-tab" aria-hidden="true" focusable="false" width="80" height="80"
-              viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#watch-icon-tab"></use>
+                viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#watch-icon-tab"></use>
               </svg>
             </div>
             <p class="methods__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
@@ -217,29 +213,30 @@
         <div class="example-range-desk">
           <div class="example__images">
 
-
             <div class="example__block-img-fat-mob">
-              <div class="example__img-fat-bg1-mob"></div>
               <picture>
-                <source media="(min-width: 768px" srcset="images/cat-fat.png, images/cat-fat2x.png">
-                <img class="example__img" src="images/cat-before-mobile.png" alt="Кот до похудения" width="280"
+                <source media="(min-width: 768px" srcset="images/cat-before-mobile.png 1x, images/cat-before-mobile2x.png 2x">
+                <img class="example__img" src="images/cat-before-mobile.png"  srcset="images/cat-before-mobile2x.png 2x" alt="Кот до похудения" width="280"
                   height="232">
               </picture>
-              <div class="example__img-fat-bg2-mob"></div>
             </div>
 
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-skinny.png, images/cat-skinny2x.png">
-              <img class="example__img-after" src="images/cat-after-mobile.png" alt="Кот после похудения" width="201"
+              <source media="(min-width: 768px)" srcset="images/cat-after-mobile.png 1x, images/cat-after-mobile2x.png 2x">
+              <img class="example__img-after" src="images/cat-after-mobile.png" srcset="images/cat-after-mobile2x.png 2x" alt="Кот после похудения" width="201"
                 height="232">
             </picture>
 
             <div class="example__block-img-fat">
-              <div class="example__img-fat-bg1"></div>
-              <img class="example__img-fat" src="images/cat-fat.png" alt="Кот до похудения" width="677" height="520">
-              <div class="example__img-fat-bg2"></div>
+              <picture>
+                <source media="(min-width: 768px" srcset="images/cat-fat.png 1x, images/cat-fat2x.png 2x">
+                <img class="example__img-fat" src="images/cat-fat.png" srcset="images/cat-fat2x.png 2x" alt="Кот до похудения" width="677" height="520">
+              </picture>
             </div>
-            <img class="example__img-skinny" src="images/cat-skinny.png" alt="Кот после похудения" width="545"
+
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.png 1x, images/cat-skinny2x.png 2x">
+            <img class="example__img-skinny" src="images/cat-skinny.png" srcset="images/cat-skinny2x.png 2x" alt="Кот после похудения" width="545"
               height="520">
             </picture>
           </div>
@@ -316,7 +313,7 @@
         </ul>
       </div>
       <div class="footer-htmlacademy">
-        <a class="footer-htmlacademy__link" href="https://htmlacademy.ru/">
+        <a class="footer-htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="footer-htmlacademy__text">
             <span class="footer-htmlacademy__text-logo">HTMLAcademy</span>
           </div>
