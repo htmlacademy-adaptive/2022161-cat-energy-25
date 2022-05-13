@@ -124,6 +124,7 @@
 .targets-card__button {
   margin-left: 20px;
   margin-right: 20px;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -152,17 +153,33 @@
 }
 
 .targets-card__button-slim {
-  display: block;
-  width: 100%;
+  display: inline-block;
   padding-top: 15px;
   padding-bottom: 18px;
-  border-top: 1px solid #d9d9d9;
+  padding-right: 57px;
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 10px;
+    background-image: url("../images/icon_arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    background-image: url("../images/icon_arrow_long.svg");
+  }
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -188,7 +205,6 @@
 }
 
 .targets-card__button-title {
-  padding-right: 15px;
   color: #000000;
 }
 
