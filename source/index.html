@@ -62,8 +62,11 @@
         <span class="functional-food__text">Занялся собой? Займись котом!</span>
 
         <picture>
-          <source media="(min-width: 768px)" srcset="images/сat-glass-tablet.png 1x, images/сat-glass-tablet2x.png 2x">
-          <img class="functional-food__img" src="images/сat-glass-mobile.png" srcset="images/сat-glass-mobile2x.png 2x"
+          <source media="(min-width: 768px)"
+            srcset="images/cat-glass-tablet.webp 1x, images/cat-glass-tablet2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="images/cat-glass-tablet.png 1x, images/cat-glass-tablet2x.png 2x">
+          <source srcset="images/cat-glass-mobile.webp 1x, images/cat-glass-mobile2x.webp 2x">
+          <img class="functional-food__img" src="images/cat-glass-mobile.png" srcset="images/cat-glass-mobile2x.png 2x"
             alt="Стакан еды" width="280" height="270">
         </picture>
 
@@ -200,7 +203,10 @@
             <div class="example__block-img-fat-mob">
               <picture>
                 <source media="(min-width: 768px"
+                  srcset="images/cat-before-mobile.webp 1x, images/cat-before-mobile2x.webp 2x">
+                <source media="(min-width: 768px"
                   srcset="images/cat-before-mobile.png 1x, images/cat-before-mobile2x.png 2x">
+                <source srcset="images/cat-before-mobile.webp, images/cat-before-mobile2x.webp 2x">
                 <img class="example__img" src="images/cat-before-mobile.png" srcset="images/cat-before-mobile2x.png 2x"
                   alt="Кот до похудения" width="280" height="232">
               </picture>
@@ -208,21 +214,28 @@
 
             <picture>
               <source media="(min-width: 768px)"
+                srcset="images/cat-after-mobile.webp 1x, images/cat-after-mobile2x.webp 2x">
+              <source media="(min-width: 768px)"
                 srcset="images/cat-after-mobile.png 1x, images/cat-after-mobile2x.png 2x">
+              <source srcset="images/cat-after-mobile.webp, images/cat-after-mobile2x.webp 2x">
               <img class="example__img-after" src="images/cat-after-mobile.png"
                 srcset="images/cat-after-mobile2x.png 2x" alt="Кот после похудения" width="201" height="232">
             </picture>
 
             <div class="example__block-img-fat">
               <picture>
+                <source media="(min-width: 768px" srcset="images/cat-fat.webp 1x, images/cat-fat2x.webp 2x">
                 <source media="(min-width: 768px" srcset="images/cat-fat.png 1x, images/cat-fat2x.png 2x">
+                <source srcset="images/cat-fat.webp, images/cat-fat2x.webp 2x">
                 <img class="example__img-fat" src="images/cat-fat.png" srcset="images/cat-fat2x.png 2x"
                   alt="Кот до похудения" width="677" height="520">
               </picture>
             </div>
 
             <picture>
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.webp 1x, images/cat-skinny2x.webp 2x">
               <source media="(min-width: 768px)" srcset="images/cat-skinny.png 1x, images/cat-skinny2x.png 2x">
+              <source srcset="images/cat-skinny.webp, images/cat-skinny2x.webp 2x">
               <img class="example__img-skinny" src="images/cat-skinny.png" srcset="images/cat-skinny2x.png 2x"
                 alt="Кот после похудения" width="545" height="520">
             </picture>
@@ -321,5 +334,6 @@
 
   <script src="js/script.js"></script>
 </body>
+
 
 </html>

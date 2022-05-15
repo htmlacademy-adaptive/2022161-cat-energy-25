@@ -15,12 +15,14 @@
   position: relative;
   color: #ffffff;
   height: 302px;
-  background-image: url("../images/background-cat.jpg");
+  background-image: url("../images/background-cat.webp"), url("../images/background-cat.jpg");
+  z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../images/background-cat2x.jpg");
+    background-image: url("../images/background-cat2x.webp"), url("../images/background-cat2x.jpg");
     background-size: 320px auto;
   }
+
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -35,7 +37,7 @@
   left: 0;
   background-color: @maingreen;
   opacity: 0.85;
-  z-index: 0;
+  z-index: -1;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -103,7 +105,7 @@
   line-height: 36px;
   top: 0%;
   left: 0%;
-  z-index: 1;
+  z-index: 0;
 
   @media (min-width: @tablet-width) {
     color: #000000;
@@ -133,7 +135,7 @@
   text-transform: uppercase;
   top: 41%;
   left: 18.75%;
-  z-index: 1;
+  z-index: 0;
 
   @media (min-width: @tablet-width) {
     color: #000000;
