@@ -20,10 +20,11 @@
   justify-content: center;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 21px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -74,15 +75,15 @@
   display: flex;
   flex-direction: column;
   border-top: 1px solid #d9d9d9;
-  padding-top: 22px;
+  padding-top: 27px;
   padding-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     border: 1px solid #e7e7e7;
     padding: 0;
-    margin-top: 52px;
+    margin-top: 47px;
     width: 630px;
-    height: 196px;
+    height: 194px;
     justify-content: center;
   }
 
@@ -106,23 +107,24 @@
     line-height: 60px;
     padding: 0 70px;
     margin: 0 auto;
-    margin-top: 64px;
-    margin-bottom: 56px;
+    margin-top: 33px;
+    margin-bottom: 55px;
     width: 630px;
+    padding-top: 24px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 110px;
     margin: 0 auto;
     width: 1220px;
-    margin-top: 74px;
+    margin-top: 71px;
     margin-bottom: 56px;
   }
 }
 
 .finding-progamm__text {
   margin: 0 auto;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -135,7 +137,7 @@
     line-height: 30px;
     padding: 0 70px;
     width: 630px;
-    margin-bottom: 66px;
+    margin-bottom: 64px;
     padding-top: 0;
   }
 
@@ -169,10 +171,13 @@
 
 .anketa-name {
   width: 39px;
+  height: 46px;
+  padding-right: 10px;
 
   @media (min-width: @tablet-width) {
     width: 52px;
-    padding-right: 11px;
+    padding-right: 19px;
+    min-height: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -181,11 +186,14 @@
 }
 
 .anketa-weight {
-  width: 76px;
+  width: 87px;
+  height: 46px;
+  padding-right: 13px;
 
   @media (min-width: @tablet-width) {
     width: 95px;
     padding-right: 10px;
+    min-height: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -194,11 +202,13 @@
 }
 
 .anketa-age {
-  width: 109px;
+  width: 174px;
+  height: 46px;
 
   @media (min-width: @tablet-width) {
     width: 150px;
     padding-right: 11px;
+    min-height: 48px;
   }
 
   @media (min-width: @desktop-width) {
@@ -214,9 +224,9 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 15px;
-  height: 44px;
-  margin-bottom: 13px;
+  padding-left: 17px;
+  height: 46px;
+  margin-bottom: 12px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -229,6 +239,8 @@
     font-size: 20px;
     line-height: 30px;
     width: 567px;
+    height: 52px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -236,7 +248,7 @@
     line-height: 30px;
     width: 100%;
     margin-bottom: 20px;
-    height: 54px;
+    height: 53px;
   }
 }
 
@@ -263,7 +275,7 @@ input[type="text"]:invalid {
   margin: 0;
   padding: 0;
   padding-left: 15px;
-  height: 44px;
+  height: 46px;
   margin-bottom: 13px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -277,13 +289,16 @@ input[type="text"]:invalid {
     font-size: 20px;
     line-height: 30px;
     width: 536px;
+    height: 52px;
+    margin-bottom: 21px;
+    padding-left: 23px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
     width: 100%;
-    height: 54px;
+    height: 53px;
     margin-bottom: 20px;
   }
 }
@@ -307,7 +322,7 @@ input[type="text"]:invalid {
   margin: 0;
   padding: 0;
   padding-left: 15px;
-  height: 44px;
+  height: 46px;
   margin-bottom: 24px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -321,13 +336,15 @@ input[type="text"]:invalid {
     font-size: 20px;
     line-height: 30px;
     width: 497px;
+    height: 52px;
+    padding-left: 24px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 30px;
     width: 100%;
-    height: 54px;
+    height: 53px;
   }
 }
 
@@ -348,6 +365,7 @@ input[type="text"]:invalid {
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    margin-top: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -357,12 +375,19 @@ input[type="text"]:invalid {
 
 .finding-progamm__target-filter-list {
   padding: 0;
+  margin: 0;
+  margin-top: -6px;
+  margin-bottom: 3px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .finding-progamm__target-filter-item {
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 11px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -374,7 +399,16 @@ input[type="text"]:invalid {
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 28px;
+    padding-left: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 29px;
+    padding-top: 12px;
+    padding-bottom: 9px;
   }
 }
 
@@ -391,18 +425,30 @@ input[type="text"]:invalid {
 .control {
   display: flex;
   position: relative;
-  padding-left: 45px;
+  padding-left: 43px;
   height: 32px;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 55px;
+  }
 }
 
 .control-mark {
   position: absolute;
-  left: 0;
-  width: 30px;
-  height: 30px;
+  left: -2px;
+  width: 28px;
+  height: 28px;
   background: #ffffff;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    left: -4px;
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .control-label {
@@ -412,10 +458,15 @@ input[type="text"]:invalid {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-bottom: 3px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
 
@@ -430,13 +481,25 @@ input[type="text"]:invalid {
 
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 7px;
   width: 14px;
   height: 14px;
   background-color: @maingreen;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: @tablet-width) {
+    top: 9px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -472,11 +535,15 @@ input[type="text"]:invalid {
   @media (min-width: @desktop-width) {
     display: flex;
     padding-left: 110px;
-    padding-right: 100px;
+    padding-right: 111px;
     width: 1220px;
   }
 }
 
 .finding-progamm__desk-anketa {
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }

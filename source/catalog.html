@@ -11,20 +11,22 @@
 
 <body class="page__body">
   <header class="main-header container">
-    <ul class="main-header__menu">
+
+    <div class="main-header__menu">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
-          height="38">
-        <img class="main-header__logo-tablet" alt="Логотип Кэт Энерджи" src="images/logo-tablet.svg" width="174"
-          height="52">
-      </a>
-      <a class="main-header__catenergy-logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <source srcset="images/logo-mobile.svg">
+          <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
+            height="38">
+        </picture>
         <svg class="catenergy-logo" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <use href="images/sprite.svg#catenergy-icon"></use>
         </svg>
       </a>
-      <a class="main-header__toggle main-header__toggle-closed" href="#">
+      <button class="main-header__toggle main-header__toggle-closed">
         <span class="visually-hidden">Открыть меню</span>
         <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -34,15 +36,15 @@
           xmlns="http://www.w3.org/2000/svg">
           <use href="images/sprite.svg#cross"></use>
         </svg>
-      </a>
-    </ul>
+      </button>
+    </div>
     <nav class="navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link-desk" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link-desk navigation__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link-desk navigation__link-desk--current-inner" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link-desk" href="form.html">Подбор программы</a>
@@ -61,10 +63,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="images/catalog1-500-desk.webp 1x, images/catalog1-500-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 1440px)"
+                      srcset="images/catalog1-500-desk.png 1x, images/catalog1-500-desk2x.png 2x" type="image/png">
                     <source media="(min-width: 768px)"
-                      srcset="images/catalog1-500-tab.png 1x, images/catalog1-500-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog1-500-mob.png"
-                      srcset="images/catalog1-500-mob2x.png 2x" alt="Продукт курица 500 грамм" width="68" height="86">
+                      srcset="images/catalog1-500-tab.webp 1x, images/catalog1-500-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="images/catalog1-500-tab.png 1x, images/catalog1-500-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog1-500-mob.webp 1x, images/catalog1-500-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog1-500-mob.png"
+                      srcset="images/catalog1-500-mob2x.png 2x" alt="Продукт курица 500 грамм" width="140" height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -96,10 +105,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog1-1000-desk.webp 1x, images/catalog1-1000-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog1-1000-desk.png 1x, images/catalog1-1000-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog1-1000-tab.png 1x, images/catalog1-1000-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog1-1000-mob.png"
-                      srcset="images/catalog1-1000-mob2x.png 2x" alt="Продукт курица 500 грамм" width="84" height="101">
+                      srcset="images/catalog1-1000-tab.webp 1x, images/catalog1-1000-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog1-1000-tab.png 1x, images/catalog1-1000-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog1-1000-mob.webp 1x, images/catalog1-1000-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog1-1000-mob.png"
+                      srcset="images/catalog1-1000-mob2x.png 2x" alt="Продукт курица 500 грамм" width="140" height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -131,10 +147,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog2-500-desk.webp 1x, images/catalog2-500-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog2-500-desk.png 1x, images/catalog2-500-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog2-500-tab.png 1x, images/catalog2-500-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog2-500-mob.png"
-                      srcset="images/catalog2-500-mob2x.png 2x" alt="Продукт рыба 500 грамм" width="68" height="86">
+                      srcset="images/catalog2-500-tab.webp 1x, images/catalog2-500-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog2-500-tab.png 1x, images/catalog2-500-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog2-500-mob.webp 1x, images/catalog2-500-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog2-500-mob.png"
+                      srcset="images/catalog2-500-mob2x.png 2x" alt="Продукт рыба 500 грамм" width="140" height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -166,10 +189,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog2-1000-desk.webp 1x, images/catalog2-1000-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog2-1000-desk.png 1x, images/catalog2-1000-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog2-1000-tab.png 1x, images/catalog2-1000-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog2-1000-mob.png"
-                      srcset="images/catalog2-1000-mob2x.png 2x" alt="Продукт рыба 1000 грамм" width="84" height="101">
+                      srcset="images/catalog2-1000-tab.webp 1x, images/catalog2-1000-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog2-1000-tab.png 1x, images/catalog2-1000-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog2-1000-mob.webp 1x, images/catalog2-1000-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog2-1000-mob.png"
+                      srcset="images/catalog2-1000-mob2x.png 2x" alt="Продукт рыба 1000 грамм" width="140" height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -201,10 +231,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog3-500-desk.webp 1x, images/catalog3-500-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog3-500-desk.png 1x, images/catalog3-500-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog3-500-tab.png 1x, images/catalog3-500-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog3-500-mob.png"
-                      srcset="images/catalog3-500-mob2x.png 2x" alt="Продукт гречка 500 грамм" width="68" height="86">
+                      srcset="images/catalog3-500-tab.webp 1x, images/catalog3-500-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog3-500-tab.png 1x, images/catalog3-500-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog3-500-mob.webp 1x, images/catalog3-500-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog3-500-mob.png"
+                      srcset="images/catalog3-500-mob2x.png 2x" alt="Продукт гречка 500 грамм" width="140" height="112">
                   </picture>
 
                 </a>
@@ -237,11 +274,18 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog3-1000-desk.webp 1x, images/catalog3-1000-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog3-1000-desk.png 1x, images/catalog3-1000-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog3-1000-tab.png 1x, images/catalog3-1000-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog3-1000-mob.png"
-                      srcset="images/catalog3-1000-mob2x.png 2x" alt="Продукт гречка 1000 грамм" width="84"
-                      height="101">
+                      srcset="images/catalog3-1000-tab.webp 1x, images/catalog3-1000-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog3-1000-tab.png 1x, images/catalog3-1000-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog3-1000-mob.webp 1x, images/catalog3-1000-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog3-1000-mob.png"
+                      srcset="images/catalog3-1000-mob2x.png 2x" alt="Продукт гречка 1000 грамм" width="140"
+                      height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -273,10 +317,17 @@
                 <a class="product-catalog__card-img" href="#">
 
                   <picture>
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog4-500-desk.webp 1x, images/catalog4-500-desk2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  1440px)"
+                      srcset="images/catalog4-500-desk.png 1x, images/catalog4-500-desk2x.png 2x" type="image/png">
                     <source media="(min-width:  768px)"
-                      srcset="images/catalog4-500-tab.png 1x, images/catalog4-500-tab2x.png 2x">
-                    <img class="product-catalog__card-image" src="images/catalog4-500-mob.png"
-                      srcset="images/catalog4-500-mob2x.png" alt="Продукт рис 500 грамм" width="68" height="86">
+                      srcset="images/catalog4-500-tab.webp 1x, images/catalog4-500-tab2x.webp 2x" type="image/webp">
+                    <source media="(min-width:  768px)"
+                      srcset="images/catalog4-500-tab.png 1x, images/catalog4-500-tab2x.png 2x" type="image/png">
+                    <source srcset="images/catalog4-500-mob.webp 1x, images/catalog4-500-mob2x.webp 2x" type="image/webp">
+                    <img class="product-catalog__card-image 1x" src="images/catalog4-500-mob.png"
+                      srcset="images/catalog4-500-mob2x.png" alt="Продукт рис 500 грамм" width="140" height="112">
                   </picture>
                 </a>
                 <div class="product-catalog__card-text">
@@ -351,7 +402,7 @@
               <h3 class="add-catalog__card-title">Иолоко</h3>
             </a>
             <div class="add-catalog__type">
-              <span class="add-catalog__indicator">1 литров</span>
+              <span class="add-catalog__indicator">1 литр</span>
               <span class="add-catalog__value">100 р.</span>
             </div>
             <a class="button button-add-catalog" href="form.html">Заказать</a>
@@ -368,14 +419,14 @@
           </li>
         </ul>
         <div class="add-catalog-promo">
-          <div class="promo__icon">
+          <div class="add-catalog-promo__icon">
             <svg width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="img/sprite.svg#promo-gift-icon"></use>
+              <use href="images/sprite.svg#promo-gift-icon"></use>
             </svg>
 
           </div>
-          <div class="promo__transparent-bag-desk"></div>
-          <span class="promo__text">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
+          <div class="add-catalog-promo__transparent-bag-desk"></div>
+          <span class="add-catalog-promo__text">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
         </div>
       </div>
     </section>
@@ -384,15 +435,14 @@
       <div class="promo__wrapper  container">
         <div class="promo__icon">
           <svg width="78" height="80" viewBox="0 0 78 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite.svg#promo-gift-icon"></use>
+            <use href="images/sprite.svg#promo-gift-icon"></use>
           </svg>
         </div>
         <div class="promo__transparent-bag"></div>
         <span class="promo__text">Закажите все<br>и получите чехол для<br>кота в подарок!</span>
       </div>
     </section>
-    </section>
-    <section class="cooperation-form">
+    <section class="cooperation cooperation-form">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <div class="cooperation__container container">
         <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
@@ -408,15 +458,15 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853352001393!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650900586847!5m2!1sru!2sru"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" width="320" height="362" allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
           title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </iframe>
         <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
-        <div class="map_cooperation">
-          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
-          <div class="cooperation__container-adress">
-            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+        <div class="map-cooperation">
+          <span class="map-cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="map-cooperation__container-adress">
+            <span class="map-cooperation__container-adress1-map">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="map-cooperation__container-adress2-map">Санкт-Петербург</span>
           </div>
         </div>
       </div>

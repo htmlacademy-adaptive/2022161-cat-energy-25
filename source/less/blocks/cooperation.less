@@ -14,18 +14,22 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 26px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
 
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding-top: 57px;
     padding-bottom: 56px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 1px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: none;
+    padding-top: 60px;
+    padding-bottom: 56px;
+    padding-left: 60px;
+    padding-right: 40px;
   }
 }
 
@@ -43,6 +47,8 @@
     font-size: 20px;
     line-height: 26px;
     height: 83px;
+    margin-left: 40px;
+    margin-top: 1px;
   }
 
   @media (min-width: @desktop-width) {
@@ -80,6 +86,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+    margin-top: -3px;
     margin-right: 0;
     width: 160px;
     font-size: 16px;
@@ -122,21 +129,21 @@
   }
 }
 
-.cooperation__container-invitation-map {
+.map-cooperation__container-invitation-map {
   display: none;
 
   @media (min-width: @desktop-width) {
     display: inline;
-    padding-left: 80px;
-    padding-top: 60px;
-    padding-right: 74px;
+    padding-left: 78px;
+    padding-top: 57px;
+    padding-right: 55px;
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
   }
 }
 
-.cooperation__container-adress1-map {
+.map-cooperation__container-adress1-map {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -144,11 +151,14 @@
     width: 100%;
     padding-top: 56px;
     padding-right: 87px;
+    padding-left: 10px;
     text-align: start;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
-.cooperation__container-adress2-map {
+.map-cooperation__container-adress2-map {
   display: none;
 
   @media (min-width: @desktop-width) {
@@ -156,6 +166,27 @@
     width: 100%;
     padding-top: 19px;
     padding-right: 87px;
+    padding-left: 10px;
     text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.map-cooperation__container-adress {
+  line-height: 8px;
+  display: flex;
+  flex-direction: column;
+  font-family: "ArialMT", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 314px;
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 20px;
   }
 }
