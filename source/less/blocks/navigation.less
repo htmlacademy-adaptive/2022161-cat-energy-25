@@ -1,11 +1,11 @@
 .navigation {
   position: absolute;
-  top: 100%;
   left: 0;
   z-index: 1;
   background-color: #ffffff;
   color: #000000;
   display: non;
+  top: 100%;
 
   @media (min-width: @tablet-width) {
     display: inline;
@@ -13,6 +13,8 @@
     z-index: 0;
     width: 100%;
     margin: 0 auto;
+    top: 2px;
+    left: -2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -109,9 +111,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0;
-    padding-left: 512px;
+    margin-left: -2px;
+    margin-top: -7px;
+    padding-left: 476px;
     color: #ffffff;
+    max-width: 478px;
   }
 }
 
@@ -123,7 +127,7 @@
   justify-content: center;
   align-items: center;
   width: 320px;
-  height: 66px;
+  height: 65px;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
   font-family: "Oswald", "Arial", sans-serif;
@@ -145,10 +149,12 @@
   @media (min-width: @desktop-width) {
     color: #ffffff;
     border: none;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
-.navigation__link--current {
+.navigation__link-desk--current-inner {
   padding-top: 9px;
   padding-bottom: 7px;
   border-bottom: 2px solid @maingreen;

@@ -17,6 +17,8 @@
   @media (min-width: @desktop-width) {
     position: relative;
     padding-bottom: 86px;
+    padding-left: 110px;
+    margin-top: -6px;
   }
 }
 
@@ -37,15 +39,25 @@
   line-height: 24px;
   width: 248px;
   background-color: #ffffff;
+  margin-top: 25px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
     margin-bottom: 82px;
-    margin-left: 37px;
+    margin-left: 0;
     width: 340px;
     padding-left: 37px;
+    padding-right: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+    margin-left: -39px;
+    width: 340px;
+    padding-left: 39px;
     padding-right: 35px;
   }
 }
@@ -74,11 +86,15 @@
   width: 100%;
   height: 2px;
   background-color: @maingreen;
-  top: 35px;
+  top: 41px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
-    top: 23px;
+    top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 17px;
   }
 }
 
@@ -86,6 +102,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .add-catalog__card-title {
@@ -95,21 +115,28 @@
   line-height: 16px;
   text-transform: uppercase;
   margin-bottom: 13px;
+  margin-top: 1px;
 
   @media (min-width: @tablet-width) {
     margin-left: 38px;
     margin-right: 150px;
-    margin-top: 26px;
+    margin-top: 23px;
     margin-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-top: 25px;
+    margin-bottom: 26px;
+  }
 }
 
 .add-catalog__card {
   padding-top: 13px;
-  padding-bottom: 24px;
+  padding-bottom: 17px;
   border-top: 1px solid #d9d9d9;
 
   @media (min-width: @tablet-width) {
@@ -117,6 +144,7 @@
     border: 1px solid #cdcdcd;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 29px;
   }
 
   @media (min-width: @desktop-width) {
@@ -147,6 +175,9 @@
 
   @media (min-width: @tablet-width) {
     width: 230px;
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
@@ -160,21 +191,38 @@
   }
 }
 
+.add-catalog__value {
+  text-transform: uppercase;
+  width: 93px;
+  text-align: end;
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    padding-left: 24px;
+  }
+}
+
 .button-add-catalog {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: @tablet-width) {
     width: 632px;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    margin-top: 16px;
+    margin-top: 13px;
   }
 }
 
 
 .add-catalog__indicator {
   @media (min-width: @tablet-width) {
-    padding-right: 49px;
+    padding-right: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -194,8 +242,8 @@
     background-repeat: no-repeat;
     width: 246px;
     height: 289px;
-    top: 119px;
-    right: 107px;
+    top: 116px;
+    right: 109px;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {

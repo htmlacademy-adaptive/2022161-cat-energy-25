@@ -43,12 +43,12 @@
 }
 
 .finding-progamm__contacts-title {
-  width: 187px;
+  width: 184px;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 25px;
   margin-bottom: 37px;
   margin-right: 14px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 15px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -57,16 +57,18 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    width: 554px;
+    width: 538px;
     font-size: 36px;
     line-height: 36px;
     padding-left: 39px;
-    margin-bottom: 76px;
+    margin-bottom: 79px;
     background-color: #ffffff;
+    margin-top: 73px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 40px;
+    padding-left: 38px;
+    margin-top: 40px;
   }
 }
 
@@ -91,11 +93,15 @@
   width: 100%;
   height: 2px;
   background-color: @maingreen;
-  top: 43px;
+  top: 42px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
-    top: 46px;
+    top: 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 63px;
   }
 }
 
@@ -111,8 +117,8 @@
 .contacts-form {
   display: flex;
   align-items: center;
-  margin-right: 13px;
-  height: 45px;
+  margin-right: 7px;
+  height: 41px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -122,12 +128,22 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    height: 46px;
+    margin-right: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
   }
 }
 
 
 .contacts-email {
   width: 25%;
+
+  @media (min-width: @tablet-width) {
+    width: 89px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 76px;
@@ -137,6 +153,11 @@
 .contacts-phone {
   width: 30%;
 
+  @media (min-width: @tablet-width) {
+    width: 89px;
+    margin-right: 18px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 85px;
     margin-left: 80px;
@@ -144,12 +165,12 @@
 }
 
 .finding-progamm__email {
-  width: 100%;
+  width: calc(100% - 3px);
   margin: 0;
   padding: 0;
-  padding-left: 15px;
-  height: 44px;
-  margin-bottom: 13px;
+  padding-left: 10px;
+  height: 43px;
+  margin-bottom: 16px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -161,7 +182,9 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    height: 48px;
+    padding-left: 18px;
   }
 
   @media (min-width: @desktop-width) {
@@ -188,7 +211,7 @@ input[type="email"]:invalid {
 
 
 .finding-progamm__phone {
-  width: 100%;
+  width: calc(100% - 3px);
   margin: 0;
   padding: 0;
   padding-left: 15px;
@@ -206,6 +229,7 @@ input[type="email"]:invalid {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
+    height: 48px;
   }
 
   @media (min-width: @desktop-width) {

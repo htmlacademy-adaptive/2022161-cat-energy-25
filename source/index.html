@@ -14,20 +14,21 @@
   <div class="transparent-cat-desk"></div>
   <header class="main-header container">
 
-    <ul class="main-header__menu">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
-          height="38">
-        <img class="main-header__logo-tablet" alt="Логотип Кэт Энерджи" src="images/logo-tablet.svg" width="174"
-          height="52">
-      </a>
-      <a class="main-header__catenergy-logo">
+    <div class="main-header__menu">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <source srcset="images/logo-mobile.svg">
+          <img class="main-header__logo-image" alt="Логотип Кэт Энерджи" src="images/logo-mobile.svg" width="33"
+            height="38">
+        </picture>
         <svg class="catenergy-logo" aria-hidden="true" focusable="false" width="101" height="18" viewBox="0 0 101 18"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <use href="images/sprite.svg#catenergy-icon"></use>
         </svg>
       </a>
-      <a class="main-header__toggle main-header__toggle-closed" href="#">
+      <button class="main-header__toggle main-header__toggle-closed">
         <span class="visually-hidden">Открыть меню</span>
         <svg class="burger-icon" width="24" height="20" viewBox="0 0 24 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -37,8 +38,8 @@
           xmlns="http://www.w3.org/2000/svg">
           <use href="images/sprite.svg#cross"></use>
         </svg>
-      </a>
-    </ul>
+      </button>
+    </div>
     <nav class="navigation navigation--closed">
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -58,14 +59,19 @@
 
       <div class="functional-food__slogan container">
 
-        <h1 class="functional-food__title">Фунциональное питание для котов</h1>
+        <h1 class="functional-food__title">Функциональное питание для котов</h1>
         <span class="functional-food__text">Занялся собой? Займись котом!</span>
 
         <picture>
-          <source media="(min-width: 768px)"
-            srcset="images/cat-glass-tablet.webp 1x, images/cat-glass-tablet2x.webp 2x">
-          <source media="(min-width: 768px)" srcset="images/cat-glass-tablet.png 1x, images/cat-glass-tablet2x.png 2x">
-          <source srcset="images/cat-glass-mobile.webp 1x, images/cat-glass-mobile2x.webp 2x">
+          <source media="(min-width: 1440px)"
+            srcset="images/cat-glass-desktop.webp 1x, images/cat-glass-desktop2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)"
+            srcset="images/cat-glass-desktop.png 1x, images/cat-glass-desktop2x.png 2x" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/cat-glass-tablet.webp 1x, images/cat-glass-tablet2x.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/cat-glass-tablet.png 1x, images/cat-glass-tablet2x.png 2x"
+            type="image/png">
+          <source srcset="images/cat-glass-mobile.webp 1x, images/cat-glass-mobile2x.webp 2x" type="image/webp">
           <img class="functional-food__img" src="images/cat-glass-mobile.png" srcset="images/cat-glass-mobile2x.png 2x"
             alt="Стакан еды" width="280" height="270">
         </picture>
@@ -85,7 +91,7 @@
                 <use href="images/sprite.svg#slimcat-icon"></use>
               </svg>
             </div>
-            <h2 class="targets-card__title">Похудение</h2>
+            <h2 class="targets-card__title-slim">Похудение</h2>
             <p class="targets-card__text">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -102,7 +108,7 @@
                 <use href="images/sprite.svg#procat-icon"></use>
               </svg>
             </div>
-            <h2 class="targets-card__title">Набор массы</h2>
+            <h2 class="targets-card__title-pro">Набор массы</h2>
             <p class="targets-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мышцы!</p>
             <div class="targets-card__button">
@@ -172,7 +178,7 @@
                 <use href="images/sprite.svg#watch-icon-tab"></use>
               </svg>
             </div>
-            <p class="methods__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="methods__text">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -188,25 +194,29 @@
           <ul class="indicators">
             <li class="indicators__item">
               <span class="indicators__value">5 кг</span>
-              <span class="indicators__text">снижение<br>веса</span>
+              <span class="indicators__text">снижение веса</span>
+
             </li>
             <li class="indicators__item">
               <span class="indicators__value">60 дней</span>
-              <span class="indicators__text">затрачено<br>времени</span>
+              <span class="indicators__text">затрачено времени</span>
             </li>
           </ul>
-          <span class="example-price">Затраты на питание: 15 000 руб.</span>
+          <div class="example-price-tab">
+            <span class="example-price-tab1">Затраты на питание:</span>
+            <span class="example-price-tab2">15 000 руб.</span>
+          </div>
         </div>
         <div class="example-range-desk">
           <div class="example__images">
 
             <div class="example__block-img-fat-mob">
               <picture>
-                <source media="(min-width: 768px"
-                  srcset="images/cat-before-mobile.webp 1x, images/cat-before-mobile2x.webp 2x">
-                <source media="(min-width: 768px"
-                  srcset="images/cat-before-mobile.png 1x, images/cat-before-mobile2x.png 2x">
-                <source srcset="images/cat-before-mobile.webp, images/cat-before-mobile2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="images/cat-before-mobile.webp 1x, images/cat-before-mobile2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)"
+                  srcset="images/cat-before-mobile.png 1x, images/cat-before-mobile2x.png 2x" type="image/png">
+                <source srcset="images/cat-before-mobile.webp, images/cat-before-mobile2x.webp 2x" type="image/webp">
                 <img class="example__img" src="images/cat-before-mobile.png" srcset="images/cat-before-mobile2x.png 2x"
                   alt="Кот до похудения" width="280" height="232">
               </picture>
@@ -214,42 +224,46 @@
 
             <picture>
               <source media="(min-width: 768px)"
-                srcset="images/cat-after-mobile.webp 1x, images/cat-after-mobile2x.webp 2x">
+                srcset="images/cat-after-mobile.webp 1x, images/cat-after-mobile2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)"
-                srcset="images/cat-after-mobile.png 1x, images/cat-after-mobile2x.png 2x">
-              <source srcset="images/cat-after-mobile.webp, images/cat-after-mobile2x.webp 2x">
+                srcset="images/cat-after-mobile.png 1x, images/cat-after-mobile2x.png 2x" type="image/png">
+              <source srcset="images/cat-after-mobile.webp, images/cat-after-mobile2x.webp 2x" type="image/webp">
               <img class="example__img-after" src="images/cat-after-mobile.png"
                 srcset="images/cat-after-mobile2x.png 2x" alt="Кот после похудения" width="201" height="232">
             </picture>
 
             <div class="example__block-img-fat">
               <picture>
-                <source media="(min-width: 768px" srcset="images/cat-fat.webp 1x, images/cat-fat2x.webp 2x">
-                <source media="(min-width: 768px" srcset="images/cat-fat.png 1x, images/cat-fat2x.png 2x">
-                <source srcset="images/cat-fat.webp, images/cat-fat2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="images/cat-fat.webp 1x, images/cat-fat2x.webp 2x"
+                  type="image/webp">
+                <source media="(min-width: 768px)" srcset="images/cat-fat.png 1x, images/cat-fat2x.png 2x"
+                  type="image/png">
+                <source srcset="images/cat-fat.webp, images/cat-fat2x.webp 2x" type="image/webp">
                 <img class="example__img-fat" src="images/cat-fat.png" srcset="images/cat-fat2x.png 2x"
-                  alt="Кот до похудения" width="677" height="520">
+                  alt="Кот до похудения" width="640" height="500">
               </picture>
             </div>
 
             <picture>
-              <source media="(min-width: 768px)" srcset="images/cat-skinny.webp 1x, images/cat-skinny2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="images/cat-skinny.png 1x, images/cat-skinny2x.png 2x">
-              <source srcset="images/cat-skinny.webp, images/cat-skinny2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.webp 1x, images/cat-skinny2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 768px)" srcset="images/cat-skinny.png 1x, images/cat-skinny2x.png 2x"
+                type="image/png">
+              <source srcset="images/cat-skinny.webp, images/cat-skinny2x.webp 2x" type="image/webp">
               <img class="example__img-skinny" src="images/cat-skinny.png" srcset="images/cat-skinny2x.png 2x"
-                alt="Кот после похудения" width="545" height="520">
+                alt="Кот после похудения" width="535" height="511">
             </picture>
           </div>
           <div class="range-scale">
             <button class="button-before" type="button">Было</button>
-            <input type="range" min="0" max="550" value="50%" class="range-scale-long" id="myRange" oninput="fun1()">
+            <input type="range" min="0" max="550" class="range-scale-long" id="myRange" oninput="fun1()">
             <div class="range-mob-thumb"></div>
             <button class="button-after" type="button">Стало</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="cooperation-index container">
+    <section class="cooperation cooperation--index container">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <div class="cooperation__container">
         <span class="cooperation__container-invitation">Приглашаем<br>к сотрудничеству дилеров!</span>
@@ -265,15 +279,14 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.320853352001393!3d59.93871648178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650900586847!5m2!1sru!2sru"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" width="320" height="362" allowfullscreen
-          title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          referrerpolicy="no-referrer-when-downgrade" title="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </iframe>
         <img class="map-logo-img" alt="Логотип Карта" src="images/logo-map-mobile.svg" width="57">
-        <div class="map_cooperation">
-          <span class="cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
-          <div class="cooperation__container-adress">
-            <span class="cooperation__container-adress1-map">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="cooperation__container-adress2-map">Санкт-Петербург</span>
+        <div class="map-cooperation">
+          <span class="map-cooperation__container-invitation-map">Приглашаем<br> к сотрудничеству дилеров!</span>
+          <div class="map-cooperation__container-adress">
+            <span class="map-cooperation__container-adress1-map">ул. Большая<br>Конюшенная, д. 19/8</span>
+            <span class="map-cooperation__container-adress2-map">Санкт-Петербург</span>
           </div>
         </div>
       </div>
