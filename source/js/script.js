@@ -3,7 +3,6 @@ document.querySelector('.page').classList.remove('no-js');
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.main-header__toggle');
 
-
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('navigation--closed')) {
     navMain.classList.remove('navigation--closed');
@@ -18,7 +17,6 @@ navToggle.addEventListener('click', function () {
     navToggle.classList.remove('main-header__toggle-onened');
   }
 });
-
 
 function fun1() {
   let exampleRange = document.querySelector('.example__block-img-fat');
