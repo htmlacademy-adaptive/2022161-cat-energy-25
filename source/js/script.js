@@ -1,3 +1,5 @@
+document.querySelector('.page').classList.remove('no-js');
+
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.main-header__toggle');
 
@@ -29,3 +31,6 @@ function fun1() {
   exampleRangemobslider.style.width = r1.value/6.5+'px';
 
 };
+
+// document.getElementsByClassName('main-header')[0].style.display = "flex";
+
