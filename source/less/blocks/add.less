@@ -62,15 +62,11 @@
   }
 }
 
-.control-input[type="radio"] + .control-mark-squ {
-  border-radius: 50%;
-}
-
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  top: 13px;
-  left: 9px;
+  top: 18px;
+  left: 13px;
   width: 2px;
   height: 11px;
   background-color: @maingreen;
@@ -80,13 +76,21 @@
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 5px;
-  left: 18px;
+  top: 10px;
+  left: 22px;
   width: 2px;
   height: 19px;
   background-color: @maingreen;
   content: "";
   transform: rotate(40deg);
+}
+
+input[type="checkbox"]:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:disabled + .control-mark + .control-label {
+  opacity: 0.3;
 }
 
 

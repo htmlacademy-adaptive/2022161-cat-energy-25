@@ -1,6 +1,7 @@
+document.querySelector('.page').classList.remove('no-js');
+
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.main-header__toggle');
-
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('navigation--closed')) {
@@ -17,7 +18,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-
 function fun1() {
   let exampleRange = document.querySelector('.example__block-img-fat');
   let exampleRangemob = document.querySelector('.example__block-img-fat-mob');
@@ -29,3 +29,4 @@ function fun1() {
   exampleRangemobslider.style.width = r1.value/6.5+'px';
 
 };
+// document.getElementsByClassName('main-header')[0].style.display = "flex";

@@ -413,6 +413,10 @@ input[type="text"]:invalid {
 }
 
 
+.finding-progamm__target-filter-item:disabled {
+  opacity: 0.3;
+}
+
 .finding-progamm__target-filter-item:focus {
   opacity: 0.3;
 }
@@ -470,6 +474,14 @@ input[type="text"]:invalid {
   }
 }
 
+input[type="radio"]:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+input[type="radio"]:disabled ~ .control-label {
+  opacity: 0.3;
+}
+
 .control:hover .control-mark {
   border: 1px solid #bababa;
 }
@@ -490,8 +502,8 @@ input[type="text"]:invalid {
   content: "";
 
   @media (min-width: @tablet-width) {
-    top: 9px;
-    left: 9px;
+    top: 10px;
+    left: 10px;
     width: 18px;
     height: 18px;
   }
@@ -504,10 +516,6 @@ input[type="text"]:invalid {
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
-}
-
-.finding-progamm__ingredients-item:focus {
-  opacity: 0.3;
 }
 
 .finding-progamm__desk-v {
