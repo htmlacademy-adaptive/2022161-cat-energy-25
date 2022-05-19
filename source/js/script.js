@@ -31,6 +31,4 @@ function fun1() {
   exampleRangemobslider.style.width = r1.value/6.5+'px';
 
 };
-
 // document.getElementsByClassName('main-header')[0].style.display = "flex";
-
