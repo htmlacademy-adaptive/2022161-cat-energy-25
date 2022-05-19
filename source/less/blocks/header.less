@@ -4,6 +4,11 @@
   align-items: center;
   z-index: 1;
 
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+
   @media (min-width: @desktop-width) {
     width: 1220px;
     padding-top: 53px;
@@ -12,10 +17,21 @@
   }
 }
 
+.no-js .main-header {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .main-header__toggle {
   background-color: transparent;
   border: none;
   padding: 0;
+}
+
+.no-js .main-header__toggle {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
